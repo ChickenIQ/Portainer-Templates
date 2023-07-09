@@ -11,35 +11,35 @@ services:
                     - node.Hostname == ${HOSTNAME}
 
         environment:
-            VERSION: ${VERSION}
-            SPIGET_RESOURCES: ${SPIGET_RESOURCES}
+            VERSION: '${VERSION}'
+            SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
 
-            MOTD: ${MOTD}
-            OPS: ${OPS}
-            WHITELIST: ${WHITELIST}
+            MOTD: '${MOTD}'
+            OPS: '${OPS}'
+            WHITELIST: '${WHITELIST}'
 
-            MAX_PLAYERS: ${MAX_PLAYERS}
-            DIFFICULTY: ${DIFFICULTY}
+            MAX_PLAYERS: '${MAX_PLAYERS}'
+            DIFFICULTY: '${DIFFICULTY}'
 
-            ENABLE_WHITELIST: ${WHITELIST}
-            ONLINE_MODE: ${ONLINE_MODE}
-            ALLOW_FLIGHT: ${ALLOW_FLIGHT}
-            ENABLE_COMMAND_BLOCK: ${ENABLE_COMMAND_BLOCK}
+            ENABLE_WHITELIST: '${WHITELIST}'
+            ONLINE_MODE: '${ONLINE_MODE}'
+            ALLOW_FLIGHT: '${ALLOW_FLIGHT}'
+            ENABLE_COMMAND_BLOCK: '${ENABLE_COMMAND_BLOCK}'
 
-            OVERRIDE_SERVER_PROPERTIES: ${OVERRIDE_SERVER_PROPERTIES}
-            OVERRIDE_WHITELIST: ${OVERRIDE_WHITELIST}
-            OVERRIDE_ICON: ${OVERRIDE_ICON}
+            OVERRIDE_SERVER_PROPERTIES: '${OVERRIDE_SERVER_PROPERTIES}'
+            OVERRIDE_WHITELIST: '${OVERRIDE_WHITELIST}'
+            OVERRIDE_ICON: '${OVERRIDE_ICON}'
 
-            MAX_MEMORY: ${MAX_MEMORY}
-            INIT_MEMORY: ${INIT_MEMORY}
+            MAX_MEMORY: '${MAX_MEMORY}'
+            INIT_MEMORY: '${INIT_MEMORY}'
 
-            EULA: ${EULA}
-            ICON: ${ICON}
-            EXEC_DIRECTLY: ${EXEC_DIRECTLY}
+            EULA: '${EULA}'
+            ICON: '${ICON}'
+            EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
 
             TYPE: PAPER
-            ENFORCE_SECURE_PROFILE: false
-            SNOOPER_ENABLED: false
+            ENFORCE_SECURE_PROFILE: 'false'
+            SNOOPER_ENABLED: 'false'
 
         restart: unless-stopped
         stdin_open: true

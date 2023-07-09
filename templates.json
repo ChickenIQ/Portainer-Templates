@@ -12,7 +12,6 @@
                 "url": "https://github.com/ChickenIQ/portainer-templates",
                 "stackfile": "stacks/minecraft/paper.yml"
             },
-            "administrator_only": true,
             "env": [
                 {
                     "label": "Java Version",
