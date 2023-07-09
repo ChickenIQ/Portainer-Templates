@@ -1,0 +1,51 @@
+services:
+    server:
+        image: itzg/minecraft-server:${JAVA_VERSION:-'java17'}
+        deploy:
+            mode: replicated
+            replicas: 1
+            labels:
+                - mc-router.host=${HOST}
+            placement:
+                constraints:
+                    - node.Hostname == ${HOSTNAME}
+
+        environment:
+            VERSION: '${VERSION:-1.20.1}'
+            SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
+            MOTD: '${MOTD}'
+            OPS: '${OPS}'
+            WHITELIST: '${WHITELIST}'
+            MAX_PLAYERS: '${MAX_PLAYERS}'
+            DIFFICULTY: '${DIFFICULTY}'
+            ENABLE_WHITELIST: '${WHITELIST}'
+            ONLINE_MODE: '${ONLINE_MODE}'
+            ALLOW_FLIGHT: '${ALLOW_FLIGHT}'
+            ENABLE_COMMAND_BLOCK: '${ENABLE_COMMAND_BLOCK}'
+            OVERRIDE_SERVER_PROPERTIES: '${OVERRIDE_SERVER_PROPERTIES}'
+            OVERRIDE_WHITELIST: '${OVERRIDE_WHITELIST}'
+            OVERRIDE_ICON: '${OVERRIDE_ICON}'
+            MAX_MEMORY: '${MAX_MEMORY}'
+            INIT_MEMORY: '${INIT_MEMORY}''
+            EULA: '${EULA}'
+            ICON: '${ICON}'
+            EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
+            TYPE: 'PAPER'
+            ENFORCE_SECURE_PROFILE: 'false'
+            SNOOPER_ENABLED: 'false'
+
+        restart: unless-stopped
+        stdin_open: true
+        tty: true
+        volumes:
+            - data:/data
+        networks:
+            - mc
+
+version: '3.8'
+volumes:
+    data:
+
+networks:
+    mc:
+      external: true
