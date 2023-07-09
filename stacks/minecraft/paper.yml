@@ -33,10 +33,10 @@ services:
             MAX_MEMORY: '${MAX_MEMORY}'
             INIT_MEMORY: '${INIT_MEMORY}'
 
-            EULA: '${EULA}'
             ICON: '${ICON}'
             EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
 
+            EULA: 'true'
             TYPE: PAPER
             ENFORCE_SECURE_PROFILE: 'false'
             SNOOPER_ENABLED: 'false'
