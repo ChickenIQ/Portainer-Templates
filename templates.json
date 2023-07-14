@@ -5,7 +5,9 @@
             "type": 2,
             "title": "PaperMC",
             "description": "PaperMC Minecraft Server",
-            "categories": ["Minecraft"],
+            "categories": [
+                "Minecraft"
+            ],
             "platform": "linux",
             "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABGlBMVEVHcEz65ULy3DUmh+dBj9/m7Tn/6kDbxyx7lKI2hNs6ebB8u0GP1wB60QDAskhEg9A9iryAvQCvniXFcjz/TVj/TVj/6Tqfpoq5uAzMezruWk7+QGQ8PDw5Ojt+dTtvdGZDbm+GdCmxOkqXPkKGPD9xOTthOjs7OztDQ0NAP0A5QkI8QkP/SVn8T1Y3NzcwMDA8PDy1tbXp6ekqKiqX2ACEhIT19fX////Pz88pMDqZ2wCiRENkZGTc3Nz+/v6mpqY8PEOsnzw9daKnQEfBwcH85j765UZBj+BysFCenp48jOCWyQB0dHTJycl0lQf65kWUXTpWVlatqGFXan93tQC7fzb/S1j8T1Y8PDxlXz3bY0b96kZGgJnEsjW4bZdsAAAAXnRSTlMA5ZY23BbF9vP/9u/8c/b27/jy5sn/tPLx9PkSUJW67+jm7u7v7LmE/////0WW////////kP////98pev//////+Gx5f/7Jln0/7jy///qQuD/8un7jpRtR5X3exyKuu9QLwAAAcJJREFUeAFiIBUwMjGzMLDilmdj5+Dk4ubhBVRKDloSxEAU7bXGtpGMnR3btv//N7Zq7HP2tvvd7iSV3M0FQtEPTyyRyuQ3c4VS9KNSa+SI9izR6RGD0WS2WCxWq81mszv0uhPBSRAKuBA3QIjzEGs9DnLFqeCV29znmc9/JnguhIA/GAqfCBGx3Hoi0HA0xn5BiO+FBE+TdB1ifyrNMizrI7n8vqAFnrq4F3y0xFgmw6IBQo3lyiavftUklq0QCNcZY6FYhqUooSblzmh8NzcCDbdi8Pf2L/wiQEiuIxKUu5B3P4Q/Peikv59m2HoQTjgId7Im/HgCoVIeiDo54gtizFJ17EIb6uCyNL8/OeSt/GmiJBCFH4QCLcgzrO5DQVL7etkaT0OKPexnw33McRAoqHnfVW5r5HO7CrdDDJUUBSGp4UX2tYrvy1CK1ksZFgsTEKzyEe98ulGo9/2kXkLBbZWPuSsh2IcK+XwEBZt8ciVAqfd3IMimV8IZ8fMl53a7kFyO0tz5ikJmTqfNZk1aLEVzxzQUzJ3IjDsDVvpC0uTVRJ/lJXcLj5bP49W+hQPI7xFZfTXW5WfuASuYfe6f/AG8LmnvBaDjywAAAABJRU5ErkJggg==",
             "repository": {
@@ -17,8 +19,15 @@
                     "label": "Java Version",
                     "name": "JAVA_VERSION",
                     "select": [
-                        { "text": "Java 17", "value": "java17", "default": "true" },
-                        { "text": "Java 8", "value": "java8-multiarch" }
+                        {
+                            "text": "Java 17",
+                            "value": "java17",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Java 8",
+                            "value": "java8-multiarch"
+                        }
                     ]
                 },
                 {
@@ -63,58 +72,113 @@
                     "label": "Difficulty",
                     "name": "DIFFICULTY",
                     "select": [
-                        { "text": "Peaceful", "value": "peaceful" },
-                        { "text": "Easy", "value": "easy" },
-                        { "text": "Normal", "value": "normal", "default": "true" },
-                        { "text": "Hard", "value": "hard" }
+                        {
+                            "text": "Peaceful",
+                            "value": "peaceful"
+                        },
+                        {
+                            "text": "Easy",
+                            "value": "easy"
+                        },
+                        {
+                            "text": "Normal",
+                            "value": "normal",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Hard",
+                            "value": "hard"
+                        }
                     ]
                 },
                 {
                     "label": "Online Mode",
                     "name": "ONLINE_MODE",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 },
                 {
                     "label": "Allow Flight",
                     "name": "ALLOW_FLIGHT",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 },
                 {
                     "label": "Enable Command Blocks",
                     "name": "ENABLE_COMMAND_BLOCK",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 },
                 {
                     "label": "Override Server Properties",
                     "name": "OVERRIDE_SERVER_PROPERTIES",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 },
                 {
                     "label": "Override Whitelist",
                     "name": "OVERRIDE_WHITELIST",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 },
                 {
                     "label": "Override Icon",
                     "name": "OVERRIDE_ICON",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 },
                 {
@@ -136,8 +200,15 @@
                     "label": "Exec Directly",
                     "name": "EXEC_DIRECTLY",
                     "select": [
-                        { "text": "True", "value": "true", "default": "true" },
-                        { "text": "False", "value": "false" }
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
                     ]
                 }
             ]

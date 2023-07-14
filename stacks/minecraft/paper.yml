@@ -1,6 +1,22 @@
+version: '3.8'
+
+volumes:
+    data:
+
+networks:
+    mc:
+        external: true
+
 services:
     server:
         image: itzg/minecraft-server:${JAVA_VERSION}
+        restart: unless-stopped
+        stdin_open: true
+        tty: true
+        volumes:
+            - data:/data
+        networks:
+            - mc
         deploy:
             mode: replicated
             replicas: 1
@@ -40,19 +56,3 @@ services:
             TYPE: PAPER
             ENFORCE_SECURE_PROFILE: 'false'
             SNOOPER_ENABLED: 'false'
-
-        restart: unless-stopped
-        stdin_open: true
-        tty: true
-        volumes:
-            - data:/data
-        networks:
-            - mc
-
-version: '3.8'
-volumes:
-    data:
-
-networks:
-    mc:
-        external: true
