@@ -6,7 +6,6 @@ base = {
     "templates": []
 }
 
-
 for root, dirs, files in os.walk("templates"):
     for file in files:
         if file.endswith(".json"):
@@ -15,3 +14,5 @@ for root, dirs, files in os.walk("templates"):
 
 with open('templates.json', 'w') as outfile:
     json.dump(base, outfile, indent=4)
+
+print("Templates generated successfully!")
