@@ -4,7 +4,7 @@
     "description": "File Server",
     "categories": ["Utils"],
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/images/miniserve.png",
+    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
     "repository": {
         "url": "https://github.com/ChickenIQ/portainer-templates",
         "stackfile": "stacks/utils/miniserve.yml"
