@@ -1,0 +1,22 @@
+version: '3.8'
+
+volumes:
+    data:
+
+services:
+    server:
+        image: mumblevoip/mumble-server:latest
+        ports:
+            - 64738:64738
+            - 64738:64738/udp
+        volumes:
+            - data:/data
+        environment:
+            MUMBLE_CONFIG_welcome_text: ${WELCOME_TEXT}
+
+        deploy:
+            mode: replicated
+            replicas: 1
+            placement:
+                constraints:
+                    - node.Hostname == ${NODE_HOSTNAME}
