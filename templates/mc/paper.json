@@ -129,40 +129,13 @@
             "default": "16"
         },
         {
-            "label": "Force Gamemode",
-            "name": "FORCE_GAMEMODE",
-            "select": [
-                { "text": "True", "value": "true" },
-                { "text": "False", "value": "false", "default": "true" }
-            ]
+            "label": "Simulation Distance",
+            "name": "SIMULATION_DISTANCE",
+            "default": "10"
         },
         {
-            "label": "Hardcore",
-            "name": "HARDCORE",
-            "select": [
-                { "text": "True", "value": "true" },
-                { "text": "False", "value": "false", "default": "true" }
-            ]
-        },
-        {
-            "label": "Mode",
-            "name": "MODE",
-            "select": [
-                { "text": "Survival", "value": "survival", "default": "true" },
-                { "text": "Creative", "value": "creative" },
-                { "text": "Adventure", "value": "adventure" },
-                { "text": "Spectator", "value": "spectator" }
-            ]
-        },
-        {
-            "label": "Difficulty",
-            "name": "DIFFICULTY",
-            "select": [
-                { "text": "Peaceful", "value": "peaceful" },
-                { "text": "Easy", "value": "easy" },
-                { "text": "Normal", "value": "normal", "default": "true" },
-                { "text": "Hard", "value": "hard" }
-            ]
+            "label": "Player Idle Timeout",
+            "name": "PLAYER_IDLE_TIMEOUT"
         },
         {
             "label": "PVP",
@@ -171,15 +144,6 @@
                 { "text": "True", "value": "true", "default": "true" },
                 { "text": "False", "value": "false" }
             ]
-        },
-        {
-            "label": "Simulation Distance",
-            "name": "SIMULATION_DISTANCE",
-            "default": "10"
-        },
-        {
-            "label": "Player Idle Timeout",
-            "name": "PLAYER_IDLE_TIMEOUT"
         },
         {
             "label": "Spawn NPCS",
@@ -226,6 +190,55 @@
             ]
         },
         {
+            "label": "Force Gamemode",
+            "name": "FORCE_GAMEMODE",
+            "select": [
+                { "text": "True", "value": "true" },
+                { "text": "False", "value": "false", "default": "true" }
+            ]
+        },
+        {
+            "label": "Hardcore",
+            "name": "HARDCORE",
+            "select": [
+                { "text": "True", "value": "true" },
+                { "text": "False", "value": "false", "default": "true" }
+            ]
+        },
+        {
+            "label": "Mode",
+            "name": "MODE",
+            "select": [
+                { "text": "Survival", "value": "survival", "default": "true" },
+                { "text": "Creative", "value": "creative" },
+                { "text": "Adventure", "value": "adventure" },
+                { "text": "Spectator", "value": "spectator" }
+            ]
+        },
+        {
+            "label": "Difficulty",
+            "name": "DIFFICULTY",
+            "select": [
+                { "text": "Peaceful", "value": "peaceful" },
+                { "text": "Easy", "value": "easy" },
+                { "text": "Normal", "value": "normal", "default": "true" },
+                { "text": "Hard", "value": "hard" }
+            ]
+        },
+        {
+            "label": "Server Icon",
+            "name": "ICON",
+            "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
+        },
+        {
+            "label": "Override Icon",
+            "name": "OVERRIDE_ICON",
+            "select": [
+                { "text": "True", "value": "true", "default": "true" },
+                { "text": "False", "value": "false" }
+            ]
+        },
+        {
             "label": "Override Server Properties",
             "name": "OVERRIDE_SERVER_PROPERTIES",
             "select": [
@@ -240,19 +253,6 @@
                 { "text": "True", "value": "true", "default": "true" },
                 { "text": "False", "value": "false" }
             ]
-        },
-        {
-            "label": "Override Icon",
-            "name": "OVERRIDE_ICON",
-            "select": [
-                { "text": "True", "value": "true", "default": "true" },
-                { "text": "False", "value": "false" }
-            ]
-        },
-        {
-            "label": "Server Icon",
-            "name": "ICON",
-            "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
         },
         {
             "label": "Exec Directly",
