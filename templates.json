@@ -57,10 +57,6 @@
                     "default": "Main"
                 },
                 {
-                    "label": "Server Address",
-                    "name": "HOST"
-                },
-                {
                     "label": "Java Version",
                     "name": "JAVA_VERSION",
                     "select": [
@@ -79,6 +75,10 @@
                     "label": "Version",
                     "name": "VERSION",
                     "default": "1.20.1"
+                },
+                {
+                    "label": "Server Address",
+                    "name": "HOST"
                 },
                 {
                     "label": "Spiget Resource ID",
@@ -105,27 +105,14 @@
                     "default": "69"
                 },
                 {
-                    "label": "Difficulty",
-                    "name": "DIFFICULTY",
-                    "select": [
-                        {
-                            "text": "Peaceful",
-                            "value": "peaceful"
-                        },
-                        {
-                            "text": "Easy",
-                            "value": "easy"
-                        },
-                        {
-                            "text": "Normal",
-                            "value": "normal",
-                            "default": "true"
-                        },
-                        {
-                            "text": "Hard",
-                            "value": "hard"
-                        }
-                    ]
+                    "label": "Max Memory",
+                    "name": "MAX_MEMORY",
+                    "default": "8G"
+                },
+                {
+                    "label": "Init Memory",
+                    "name": "INIT_MEMORY",
+                    "default": "1G"
                 },
                 {
                     "label": "Enable WhiteList",
@@ -234,6 +221,36 @@
                     "default": "16"
                 },
                 {
+                    "label": "Force Gamemode",
+                    "name": "FORCE_GAMEMODE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "Hardcore",
+                    "name": "HARDCORE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
                     "label": "Mode",
                     "name": "MODE",
                     "select": [
@@ -257,32 +274,25 @@
                     ]
                 },
                 {
-                    "label": "Hardcore",
-                    "name": "HARDCORE",
+                    "label": "Difficulty",
+                    "name": "DIFFICULTY",
                     "select": [
                         {
-                            "text": "True",
-                            "value": "true"
+                            "text": "Peaceful",
+                            "value": "peaceful"
                         },
                         {
-                            "text": "False",
-                            "value": "false",
-                            "default": "true"
-                        }
-                    ]
-                },
-                {
-                    "label": "Force Gamemode",
-                    "name": "FORCE_GAMEMODE",
-                    "select": [
-                        {
-                            "text": "True",
-                            "value": "true"
+                            "text": "Easy",
+                            "value": "easy"
                         },
                         {
-                            "text": "False",
-                            "value": "false",
+                            "text": "Normal",
+                            "value": "normal",
                             "default": "true"
+                        },
+                        {
+                            "text": "Hard",
+                            "value": "hard"
                         }
                     ]
                 },
@@ -433,16 +443,6 @@
                             "value": "false"
                         }
                     ]
-                },
-                {
-                    "label": "Max Memory",
-                    "name": "MAX_MEMORY",
-                    "default": "8G"
-                },
-                {
-                    "label": "Init Memory",
-                    "name": "INIT_MEMORY",
-                    "default": "1G"
                 },
                 {
                     "label": "Server Icon",
