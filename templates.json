@@ -52,6 +52,15 @@
             },
             "env": [
                 {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                },
+                {
+                    "label": "Server Address",
+                    "name": "HOST"
+                },
+                {
                     "label": "Java Version",
                     "name": "JAVA_VERSION",
                     "select": [
@@ -65,15 +74,6 @@
                             "value": "java8-multiarch"
                         }
                     ]
-                },
-                {
-                    "label": "Server Address",
-                    "name": "HOST"
-                },
-                {
-                    "label": "Node Hostname",
-                    "name": "NODE_HOSTNAME",
-                    "default": "Main"
                 },
                 {
                     "label": "Version",
@@ -128,6 +128,21 @@
                     ]
                 },
                 {
+                    "label": "Enable WhiteList",
+                    "name": "ENABLE_WHITELIST",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
                     "label": "Online Mode",
                     "name": "ONLINE_MODE",
                     "select": [
@@ -169,6 +184,203 @@
                         {
                             "text": "False",
                             "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "World",
+                    "name": "WORLD"
+                },
+                {
+                    "label": "Seed",
+                    "name": "SEED"
+                },
+                {
+                    "label": "Level Type",
+                    "name": "LEVEL_TYPE"
+                },
+                {
+                    "label": "Generator Settings",
+                    "name": "GENERATOR_SETTINGS"
+                },
+                {
+                    "label": "Allow Nether",
+                    "name": "ALLOW_NETHER",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "View Distance",
+                    "name": "VIEW_DISTANCE",
+                    "default": "10"
+                },
+                {
+                    "label": "Spawn Protection",
+                    "name": "SPAWN_PROTECTION",
+                    "default": "16"
+                },
+                {
+                    "label": "Mode",
+                    "name": "MODE",
+                    "select": [
+                        {
+                            "text": "Survival",
+                            "value": "survival",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Creative",
+                            "value": "creative"
+                        },
+                        {
+                            "text": "Adventure",
+                            "value": "adventure"
+                        },
+                        {
+                            "text": "Spectator",
+                            "value": "spectator"
+                        }
+                    ]
+                },
+                {
+                    "label": "Hardcore",
+                    "name": "HARDCORE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "Force Gamemode",
+                    "name": "FORCE_GAMEMODE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "PVP",
+                    "name": "PVP",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Simulation Distance",
+                    "name": "SIMULATION_DISTANCE",
+                    "default": "10"
+                },
+                {
+                    "label": "Player Idle Timeout",
+                    "name": "PLAYER_IDLE_TIMEOUT"
+                },
+                {
+                    "label": "Spawn NPCS",
+                    "name": "SPAWN_NPCS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Spawn Animals",
+                    "name": "SPAWN_ANIMALS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Spawn Monsters",
+                    "name": "SPAWN_MONSTERS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Generate Structures",
+                    "name": "GENERATE_STRUCTURES",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Resource Pack",
+                    "name": "RESOURCE_PACK"
+                },
+                {
+                    "label": "Enforce Resource Pack",
+                    "name": "ENFORCE_RESOURCE_PACK",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
                         }
                     ]
                 },
@@ -230,7 +442,7 @@
                 {
                     "label": "Server Icon",
                     "name": "ICON",
-                    "default": "https://cdn.discordapp.com/attachments/851523458524643329/1122529789920694272/hKJVi53.png"
+                    "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
                 },
                 {
                     "label": "Exec Directly",
