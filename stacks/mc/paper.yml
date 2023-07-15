@@ -27,56 +27,58 @@ services:
                     - node.Hostname == ${NODE_HOSTNAME}
 
         environment:
-            VERSION: '${VERSION}'
-            SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
-
+            # General Configuration
+            EULA: 'true'
+            EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
+            ICON: '${ICON}'
             MOTD: '${MOTD}'
             OPS: '${OPS}'
             WHITELIST: '${WHITELIST}'
+            VERSION: '${VERSION}'
 
-            MAX_PLAYERS: '${MAX_PLAYERS}'
-            DIFFICULTY: '${DIFFICULTY}'
-
-            ENABLE_WHITELIST: '${ENABLE_WHITELIST}'
-            ONLINE_MODE: '${ONLINE_MODE}'
+            # Server Configuration
             ALLOW_FLIGHT: '${ALLOW_FLIGHT}'
-            ENABLE_COMMAND_BLOCK: '${ENABLE_COMMAND_BLOCK}'
-
-            WORLD: '${WORLD}'
-            SEED: '${SEED}'
-            LEVEL_TYPE: '${LEVEL_TYPE}'
-            GENERATOR_SETTINGS: '${GENERATOR_SETTINGS}'
             ALLOW_NETHER: '${ALLOW_NETHER}'
-
-            VIEW_DISTANCE: '${VIEW_DISTANCE}'
-            SPAWN_PROTECTION: '${SPAWN_PROTECTION}'
-            MODE: '${MODE}'
-            HARDCORE: '${HARDCORE}'
+            DIFFICULTY: '${DIFFICULTY}'
+            ENABLE_COMMAND_BLOCK: '${ENABLE_COMMAND_BLOCK}'
+            ENABLE_WHITELIST: '${ENABLE_WHITELIST}'
             FORCE_GAMEMODE: '${FORCE_GAMEMODE}'
-            PVP: '${PVP}'
-
-            SIMULATION_DISTANCE: '${SIMULATION_DISTANCE}'
+            GENERATE_STRUCTURES: '${GENERATE_STRUCTURES}'
+            HARDCORE: '${HARDCORE}'
+            MAX_BUILD_HEIGHT: '${MAX_BUILD_HEIGHT}'
+            MAX_PLAYERS: '${MAX_PLAYERS}'
+            MODE: '${MODE}'
+            ONLINE_MODE: '${ONLINE_MODE}'
             PLAYER_IDLE_TIMEOUT: '${PLAYER_IDLE_TIMEOUT}'
-
-            SPAWN_NPCS: '${SPAWN_NPCS}'
+            PVP: '${PVP}'
+            SIMULATION_DISTANCE: '${SIMULATION_DISTANCE}'
             SPAWN_ANIMALS: '${SPAWN_ANIMALS}'
             SPAWN_MONSTERS: '${SPAWN_MONSTERS}'
-            GENERATE_STRUCTURES: '${GENERATE_STRUCTURES}'
+            SPAWN_NPCS: '${SPAWN_NPCS}'
+            SPAWN_PROTECTION: '${SPAWN_PROTECTION}'
+            VIEW_DISTANCE: '${VIEW_DISTANCE}'
 
+            # World Configuration
+            GENERATOR_SETTINGS: '${GENERATOR_SETTINGS}'
+            LEVEL_TYPE: '${LEVEL_TYPE}'
+            SEED: '${SEED}'
+            WORLD: '${WORLD}'
+
+            # Resource Configuration
             RESOURCE_PACK: '${RESOURCE_PACK}'
             RESOURCE_PACK_ENFORCE: '${RESOURCE_PACK_ENFORCE}'
+            SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
 
+            # Override Configuration
+            OVERRIDE_ICON: '${OVERRIDE_ICON}'
             OVERRIDE_SERVER_PROPERTIES: '${OVERRIDE_SERVER_PROPERTIES}'
             OVERRIDE_WHITELIST: '${OVERRIDE_WHITELIST}'
-            OVERRIDE_ICON: '${OVERRIDE_ICON}'
 
-            MAX_MEMORY: '${MAX_MEMORY}'
+            # Memory Configuration
             INIT_MEMORY: '${INIT_MEMORY}'
+            MAX_MEMORY: '${MAX_MEMORY}'
 
-            ICON: '${ICON}'
-            EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
-
-            EULA: 'true'
-            TYPE: PAPER
+            # Additional Settings
             ENFORCE_SECURE_PROFILE: 'false'
             SNOOPER_ENABLED: 'false'
+            TYPE: PAPER

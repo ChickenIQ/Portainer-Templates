@@ -219,6 +219,11 @@
                     ]
                 },
                 {
+                    "label": "MAX_BUILD_HEIGHT",
+                    "name": "MAX_BUILD_HEIGHT",
+                    "default": "256"
+                },
+                {
                     "label": "View Distance",
                     "name": "VIEW_DISTANCE",
                     "default": "10"
