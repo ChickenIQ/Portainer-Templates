@@ -114,7 +114,7 @@
             ]
         },
         {
-            "label": "MAX_BUILD_HEIGHT",
+            "label": "Max Build Height",
             "name": "MAX_BUILD_HEIGHT",
             "default": "256"
         },
