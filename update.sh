@@ -1,7 +1,7 @@
 #!/bin/sh
 
 read -p "Commit message: " message
-echo "\n"
+echo -e "\n"
 message=${message:-Update}
 
 python generate-templates.py
@@ -9,4 +9,4 @@ git add .
 git commit -m "$message"
 git push
 
-echo "Done\n"
+echo -e "Done\n"

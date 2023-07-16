@@ -14,6 +14,7 @@ merger = Merger({
     },
 })
 
+print("Generating templates...\n")
 
 # Load and merge templates
 for root, dirs, files in os.walk("templates"):
@@ -42,4 +43,4 @@ with open("templates.json", "w") as file:
     file.write(template)
 
 
-print("Templates generated successfully!")
+print("\nTemplates generated successfully!\n")
