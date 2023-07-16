@@ -6,14 +6,16 @@ import os
 def generate_templates(config):
     base = json.load(open("base/base.json", "r"))
 
-    merger = Merger({
-        "properties": {
-            "env": {
-                "mergeStrategy": "arrayMergeById",
-                "mergeOptions": {"idRef": "name"},
-            }
-        },
-    })
+    merger = Merger(
+        {
+            "properties": {
+                "env": {
+                    "mergeStrategy": "arrayMergeById",
+                    "mergeOptions": {"idRef": "name"},
+                }
+            },
+        }
+    )
 
     print("Generating templates...\n")
 
@@ -27,11 +29,19 @@ def generate_templates(config):
                     base["templates"].append(json.load(template))
             else:
                 template = json.load(open(os.path.join(root, file), "r"))
-                print("Merging template: " + file.replace(".merge", "") +
-                      " with base file: " + template["merge"])
+                print(
+                    "Merging template: "
+                    + file.replace(".merge", "")
+                    + " with base file: "
+                    + template["merge"]
+                )
 
-                base["templates"].append(merger.merge(json.load(
-                    open(os.path.join("base", template["merge"]), "r")), template["data"]))
+                base["templates"].append(
+                    merger.merge(
+                        json.load(open(os.path.join("base", template["merge"]), "r")),
+                        template["data"],
+                    )
+                )
 
     # Replace variables in templates
     template = json.dumps(base, indent=4)
@@ -43,9 +53,7 @@ def generate_templates(config):
 
 
 if __name__ == "__main__":
-    templates = generate_templates(json.load(open('config.json')))
-
-    # Write templates to templates.json
+    templates = generate_templates(json.load(open("config.json")))
     with open("templates.json", "w") as file:
         file.write(templates)
 
