@@ -1,0 +1,26 @@
+{
+    "merge": "minecraft.json",
+    "data": {
+        "title": "CurseForge",
+        "description": "CurseForge Minecraft Server",
+        "categories": ["Minecraft", "Modded"],
+        "logo": "$ICON_PATH/curse.png",
+        "env": [
+            {
+                "name": "SERVER_TYPE",
+                "default": "AUTO_CURSEFORGE",
+                "preset": true
+            },
+            {
+                "label": "Modpack URL",
+                "name": "CF_PAGE_URL",
+                "preset": false
+            },
+            {
+                "label": "CurseForge API Key",
+                "name": "CF_API_KEY",
+                "preset": false
+            }
+        ]
+    }
+}

@@ -18,10 +18,14 @@ services:
         networks:
             - mc
         deploy:
+            resources:
+                limits:
+                    cpus: '${CPU_LIMIT}'
             mode: replicated
             replicas: 1
             labels:
                 - mc-router.host=${HOST}
+                - mc-router.network=mc
             placement:
                 constraints:
                     - node.Hostname == ${NODE_HOSTNAME}

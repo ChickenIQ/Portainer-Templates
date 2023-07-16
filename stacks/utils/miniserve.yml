@@ -10,6 +10,7 @@ volumes:
 services:
     miniserve:
         image: docker.io/svenstaro/miniserve
+        command: /data
         volumes:
             - miniserve:/data
         ports:
@@ -24,4 +25,3 @@ services:
             placement:
                 constraints:
                     - node.Hostname == ${NODE_HOSTNAME}
-        command: /data

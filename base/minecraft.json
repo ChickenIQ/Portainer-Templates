@@ -77,6 +77,11 @@
             "default": "69"
         },
         {
+            "label": "Cpu Limit",
+            "name": "CPU_LIMIT",
+            "default": "2"
+        },
+        {
             "label": "Max Memory",
             "name": "MAX_MEMORY",
             "default": "8G"

@@ -1,0 +1,26 @@
+{
+    "merge": "minecraft.json",
+    "data": {
+        "title": "Modrinth",
+        "description": "Modrinth Minecraft Server",
+        "categories": ["Minecraft", "Modded"],
+        "logo": "$ICON_PATH/modrinth.png",
+        "env": [
+            {
+                "name": "SERVER_TYPE",
+                "default": "FTBA",
+                "preset": true
+            },
+            {
+                "label": "Modpack",
+                "name": "MODRINTH_PROJECT",
+                "preset": false
+            },
+            {
+                "label": "Modpack Version",
+                "name": "MODRINTH_VERSION",
+                "preset": false
+            }
+        ]
+    }
+}

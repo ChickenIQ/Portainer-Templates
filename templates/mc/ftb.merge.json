@@ -1,0 +1,26 @@
+{
+    "merge": "minecraft.json",
+    "data": {
+        "title": "FTB",
+        "description": "FTB Minecraft Server",
+        "categories": ["Minecraft", "Modded"],
+        "logo": "$ICON_PATH/ftb.png",
+        "env": [
+            {
+                "name": "SERVER_TYPE",
+                "default": "FTBA",
+                "preset": true
+            },
+            {
+                "label": "Modpack ID",
+                "name": "FTB_MODPACK_ID",
+                "preset": false
+            },
+            {
+                "label": "Modpack Version ID",
+                "name": "FTB_MODPACK_VERSION_ID",
+                "preset": false
+            }
+        ]
+    }
+}

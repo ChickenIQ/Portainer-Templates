@@ -42,5 +42,4 @@ for setting in config:
 with open("templates.json", "w") as file:
     file.write(template)
 
-
 print("\nTemplates generated successfully!\n")
