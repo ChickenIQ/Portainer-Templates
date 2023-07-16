@@ -1532,33 +1532,502 @@
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/modrinth.png"
         },
         {
-            "merge": "minecraft.json",
-            "data": {
-                "title": "CurseForge",
-                "description": "CurseForge Minecraft Server",
-                "categories": [
-                    "Minecraft",
-                    "Modded"
-                ],
-                "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png",
-                "env": [
-                    {
-                        "name": "SERVER_TYPE",
-                        "default": "AUTO_CURSEFORGE",
-                        "preset": true
-                    },
-                    {
-                        "label": "Modpack URL",
-                        "name": "CF_PAGE_URL",
-                        "preset": false
-                    },
-                    {
-                        "label": "CurseForge API Key",
-                        "name": "CF_API_KEY",
-                        "preset": false
-                    }
-                ]
-            }
+            "type": 2,
+            "platform": "linux",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/games/minecraft.yml"
+            },
+            "network": "mc",
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                },
+                {
+                    "label": "Java Version",
+                    "name": "JAVA_VERSION",
+                    "select": [
+                        {
+                            "text": "Java 17",
+                            "value": "java17",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Java 8",
+                            "value": "java8-multiarch"
+                        }
+                    ]
+                },
+                {
+                    "label": "Server Address",
+                    "name": "HOST"
+                },
+                {
+                    "name": "VERSION",
+                    "preset": true
+                },
+                {
+                    "name": "MODRINTH_PROJECT",
+                    "preset": true
+                },
+                {
+                    "name": "MODRINTH_VERSION",
+                    "preset": true
+                },
+                {
+                    "name": "FTB_MODPACK_ID",
+                    "preset": true
+                },
+                {
+                    "name": "FTB_MODPACK_VERSION_ID",
+                    "preset": true
+                },
+                {
+                    "name": "CF_PAGE_URL",
+                    "preset": false,
+                    "label": "Modpack URL"
+                },
+                {
+                    "name": "CF_API_KEY",
+                    "preset": false,
+                    "label": "CurseForge API Key"
+                },
+                {
+                    "name": "SPIGET_RESOURCES",
+                    "preset": true
+                },
+                {
+                    "label": "MOTD",
+                    "name": "MOTD",
+                    "default": "ChickenIQ's Server"
+                },
+                {
+                    "label": "Operators",
+                    "name": "OPS",
+                    "default": "ChickenIQ"
+                },
+                {
+                    "label": "Whitelist",
+                    "name": "WHITELIST",
+                    "default": "ChickenIQ"
+                },
+                {
+                    "label": "Max Players",
+                    "name": "MAX_PLAYERS",
+                    "default": "69"
+                },
+                {
+                    "label": "Cpu Limit",
+                    "name": "CPU_LIMIT",
+                    "default": "2"
+                },
+                {
+                    "label": "Max Memory",
+                    "name": "MAX_MEMORY",
+                    "default": "8G"
+                },
+                {
+                    "label": "Init Memory",
+                    "name": "INIT_MEMORY",
+                    "default": "1G"
+                },
+                {
+                    "label": "Enable WhiteList",
+                    "name": "ENABLE_WHITELIST",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Online Mode",
+                    "name": "ONLINE_MODE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Allow Flight",
+                    "name": "ALLOW_FLIGHT",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Enable Command Blocks",
+                    "name": "ENABLE_COMMAND_BLOCK",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Allow Nether",
+                    "name": "ALLOW_NETHER",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "World URL",
+                    "name": "WORLD"
+                },
+                {
+                    "label": "Seed",
+                    "name": "SEED"
+                },
+                {
+                    "label": "Level Type",
+                    "name": "LEVEL_TYPE",
+                    "select": [
+                        {
+                            "text": "Normal",
+                            "value": "minecraft:normal",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Flat",
+                            "value": "minecraft:flat"
+                        },
+                        {
+                            "text": "Amplified",
+                            "value": "minecraft:amplified"
+                        },
+                        {
+                            "text": "Buffet",
+                            "value": "minecraft:buffet"
+                        },
+                        {
+                            "text": "Large Biomes",
+                            "value": "minecraft:large_biomes"
+                        },
+                        {
+                            "text": "Single Biome Surface",
+                            "value": "minecraft:single_biome_surface"
+                        },
+                        {
+                            "text": "Customized",
+                            "value": "minecraft:customized"
+                        }
+                    ]
+                },
+                {
+                    "label": "Generator Settings",
+                    "name": "GENERATOR_SETTINGS"
+                },
+                {
+                    "label": "Max Build Height",
+                    "name": "MAX_BUILD_HEIGHT",
+                    "default": "256"
+                },
+                {
+                    "label": "View Distance",
+                    "name": "VIEW_DISTANCE",
+                    "default": "10"
+                },
+                {
+                    "label": "Spawn Protection",
+                    "name": "SPAWN_PROTECTION",
+                    "default": "16"
+                },
+                {
+                    "label": "Simulation Distance",
+                    "name": "SIMULATION_DISTANCE",
+                    "default": "10"
+                },
+                {
+                    "label": "Player Idle Timeout",
+                    "name": "PLAYER_IDLE_TIMEOUT",
+                    "default": "0"
+                },
+                {
+                    "label": "PVP",
+                    "name": "PVP",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Spawn NPCS",
+                    "name": "SPAWN_NPCS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Spawn Animals",
+                    "name": "SPAWN_ANIMALS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Spawn Monsters",
+                    "name": "SPAWN_MONSTERS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Generate Structures",
+                    "name": "GENERATE_STRUCTURES",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Resource Pack",
+                    "name": "RESOURCE_PACK"
+                },
+                {
+                    "label": "Enforce Resource Pack",
+                    "name": "ENFORCE_RESOURCE_PACK",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "Force Gamemode",
+                    "name": "FORCE_GAMEMODE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "Hardcore",
+                    "name": "HARDCORE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "Mode",
+                    "name": "MODE",
+                    "select": [
+                        {
+                            "text": "Survival",
+                            "value": "survival",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Creative",
+                            "value": "creative"
+                        },
+                        {
+                            "text": "Adventure",
+                            "value": "adventure"
+                        },
+                        {
+                            "text": "Spectator",
+                            "value": "spectator"
+                        }
+                    ]
+                },
+                {
+                    "label": "Difficulty",
+                    "name": "DIFFICULTY",
+                    "select": [
+                        {
+                            "text": "Peaceful",
+                            "value": "peaceful"
+                        },
+                        {
+                            "text": "Easy",
+                            "value": "easy"
+                        },
+                        {
+                            "text": "Normal",
+                            "value": "normal",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Hard",
+                            "value": "hard"
+                        }
+                    ]
+                },
+                {
+                    "label": "Override Icon",
+                    "name": "OVERRIDE_ICON",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Override Server Properties",
+                    "name": "OVERRIDE_SERVER_PROPERTIES",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Override Whitelist",
+                    "name": "OVERRIDE_WHITELIST",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Exec Directly",
+                    "name": "EXEC_DIRECTLY",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "Server Icon",
+                    "name": "ICON",
+                    "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
+                },
+                {
+                    "name": "SERVER_TYPE",
+                    "default": "AUTO_CURSEFORGE",
+                    "preset": true
+                }
+            ],
+            "title": "CurseForge",
+            "description": "CurseForge Minecraft Server",
+            "categories": [
+                "Minecraft",
+                "Modded"
+            ],
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png"
         },
         {
             "type": 2,
