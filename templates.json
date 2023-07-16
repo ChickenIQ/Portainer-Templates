@@ -44,6 +44,7 @@
                 "url": "https://github.com/ChickenIQ/portainer-templates",
                 "stackfile": "stacks/games/minecraft.yml"
             },
+            "network": "mc",
             "env": [
                 {
                     "label": "Node Hostname",
@@ -170,6 +171,21 @@
                     ]
                 },
                 {
+                    "label": "Allow Nether",
+                    "name": "ALLOW_NETHER",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
                     "label": "World URL",
                     "name": "WORLD"
                 },
@@ -215,21 +231,6 @@
                 {
                     "label": "Generator Settings",
                     "name": "GENERATOR_SETTINGS"
-                },
-                {
-                    "label": "Allow Nether",
-                    "name": "ALLOW_NETHER",
-                    "select": [
-                        {
-                            "text": "True",
-                            "value": "true",
-                            "default": "true"
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
                 },
                 {
                     "label": "Max Build Height",
