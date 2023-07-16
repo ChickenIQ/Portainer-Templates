@@ -1,13 +1,12 @@
 {
     "type": 2,
-    "title": "Miniserve",
-    "description": "File Server",
+    "title": "Portainer Templates",
+    "description": "Self Hosted Portainer Templates Server",
     "categories": ["Utils"],
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
     "repository": {
         "url": "https://github.com/ChickenIQ/portainer-templates",
-        "stackfile": "stacks/utils/miniserve.yml"
+        "stackfile": "stacks/utils/portainer-templates.yml"
     },
     "env": [
         {

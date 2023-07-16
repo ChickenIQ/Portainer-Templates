@@ -39,6 +39,52 @@
         },
         {
             "type": 2,
+            "title": "Portainer Templates",
+            "description": "Self Hosted Portainer Templates Server",
+            "categories": [
+                "Utils"
+            ],
+            "platform": "linux",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/utils/portainer-templates.yml"
+            },
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "title": "Mumble",
+            "description": "Mumble Server",
+            "categories": [
+                "Voice"
+            ],
+            "platform": "linux",
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/utils/mumble.yml"
+            },
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                },
+                {
+                    "label": "Welcome Text",
+                    "name": "WELCOME_TEXT",
+                    "default": "Joined ChickenIQ's Mumble Server."
+                }
+            ]
+        },
+        {
+            "type": 2,
             "platform": "linux",
             "repository": {
                 "url": "https://github.com/ChickenIQ/portainer-templates",
@@ -2032,32 +2078,6 @@
                 "Modded"
             ],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png"
-        },
-        {
-            "type": 2,
-            "title": "Mumble",
-            "description": "Mumble Server",
-            "categories": [
-                "Voice"
-            ],
-            "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
-            "repository": {
-                "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/utils/mumble.yml"
-            },
-            "env": [
-                {
-                    "label": "Node Hostname",
-                    "name": "NODE_HOSTNAME",
-                    "default": "Main"
-                },
-                {
-                    "label": "Welcome Text",
-                    "name": "WELCOME_TEXT",
-                    "default": "Joined ChickenIQ's Mumble Server."
-                }
-            ]
         }
     ]
 }

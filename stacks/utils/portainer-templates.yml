@@ -1,0 +1,19 @@
+version: '3.8'
+
+networks:
+    main:
+        external: true
+
+services:
+    miniserve:
+        image: ghcr.io/chickeniq/portainer-templates-server
+        ports:
+            - 80
+        networks:
+            - main
+        deploy:
+            mode: replicated
+            replicas: 1
+            placement:
+                constraints:
+                    - node.Hostname == ${NODE_HOSTNAME}
