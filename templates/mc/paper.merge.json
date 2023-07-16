@@ -1,16 +1,9 @@
 {
     "merge": "mc.json",
     "data": {
-        "type": 2,
         "title": "PaperMC",
         "description": "PaperMC Minecraft Server",
-        "categories": ["Minecraft"],
-        "platform": "linux",
         "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png",
-        "repository": {
-            "url": "https://github.com/ChickenIQ/portainer-templates",
-            "stackfile": "stacks/mc/paper.yml"
-        },
         "env": [
             {
                 "label": "Node Hostname",

@@ -7,7 +7,7 @@
     "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/minecraft.png",
     "repository": {
         "url": "https://github.com/ChickenIQ/portainer-templates",
-        "stackfile": "stacks/mc/mc.yml"
+        "stackfile": "stacks/mc/minecraft.yml"
     },
     "env": [
         {

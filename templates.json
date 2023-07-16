@@ -48,7 +48,7 @@
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png",
             "repository": {
                 "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/mc/paper.yml"
+                "stackfile": "stacks/mc/minecraft.yml"
             },
             "env": [
                 {

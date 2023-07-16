@@ -2,6 +2,8 @@ import json
 from jsonmerge import Merger
 import os
 
+base = json.load(open("base/base.json", "r"))
+
 merger = Merger({
     "properties": {
         "env": {
@@ -11,10 +13,6 @@ merger = Merger({
     },
 })
 
-base = {
-    "version": "2",
-    "templates": []
-}
 
 # Load and merge templates
 for root, dirs, files in os.walk("templates"):
@@ -25,13 +23,12 @@ for root, dirs, files in os.walk("templates"):
             with open(os.path.join(root, file), "r") as template:
                 base["templates"].append(json.load(template))
         else:
-            print("Merging template: " + file.replace(".merge", ""))
-
             template = json.load(open(os.path.join(root, file), "r"))
-            basefile = json.load(
-                open(os.path.join("base", template["merge"]), "r"))
+            print("Merging template: " + file.replace(".merge", "") +
+                  " with " + template["merge"])
 
-            base["templates"].append(merger.merge(basefile, template["data"]))
+            base["templates"].append(merger.merge(json.load(
+                open(os.path.join("base", template["merge"]), "r")), template["data"]))
 
 # Save templates
 with open('templates.json', 'w') as outfile:
