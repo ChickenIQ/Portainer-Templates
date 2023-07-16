@@ -9,4 +9,4 @@ git add .
 git commit -m "$message"
 git push
 
-echo -e "Done\n"
+echo -e "\nUpdate complete!"
