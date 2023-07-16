@@ -98,9 +98,21 @@
                 { "text": "False", "value": "false" }
             ]
         },
-        { "label": "World", "name": "WORLD" },
+        { "label": "World Url", "name": "WORLD" },
         { "label": "Seed", "name": "SEED" },
-        { "label": "Level Type", "name": "LEVEL_TYPE" },
+        {
+            "label": "Level Type",
+            "name": "LEVEL_TYPE",
+            "select": [
+                { "text": "Normal", "value": "minecraft:normal", "default": "true" },
+                { "text": "Flat", "value": "minecraft:flat" },
+                { "text": "Amplified", "value": "minecraft:amplified" },
+                { "text": "Buffet", "value": "minecraft:buffet" },
+                { "text": "Large Biomes", "value": "minecraft:large_biomes" },
+                { "text": "Single Biome Surface", "value": "minecraft:single_biome_surface" },
+                { "text": "Customized", "value": "minecraft:customized" }
+            ]
+        },
         {
             "label": "Generator Settings",
             "name": "GENERATOR_SETTINGS"
@@ -135,7 +147,8 @@
         },
         {
             "label": "Player Idle Timeout",
-            "name": "PLAYER_IDLE_TIMEOUT"
+            "name": "PLAYER_IDLE_TIMEOUT",
+            "default": "0"
         },
         {
             "label": "PVP",
@@ -226,11 +239,6 @@
             ]
         },
         {
-            "label": "Server Icon",
-            "name": "ICON",
-            "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
-        },
-        {
             "label": "Override Icon",
             "name": "OVERRIDE_ICON",
             "select": [
@@ -261,6 +269,11 @@
                 { "text": "True", "value": "true", "default": "true" },
                 { "text": "False", "value": "false" }
             ]
+        },
+        {
+            "label": "Server Icon",
+            "name": "ICON",
+            "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
         }
     ]
 }
