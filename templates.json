@@ -67,18 +67,43 @@
                     ]
                 },
                 {
+                    "label": "Server Address",
+                    "name": "HOST"
+                },
+                {
                     "name": "VERSION",
                     "preset": false,
                     "label": "Version",
                     "default": "1.20.1"
                 },
                 {
-                    "label": "Server Address",
-                    "name": "HOST"
+                    "name": "MODRINTH_PROJECT",
+                    "preset": true
                 },
                 {
-                    "label": "Spiget Resource ID",
-                    "name": "SPIGET_RESOURCES"
+                    "name": "MODRINTH_VERSION",
+                    "preset": true
+                },
+                {
+                    "name": "FTB_MODPACK_ID",
+                    "preset": true
+                },
+                {
+                    "name": "FTB_MODPACK_VERSION_ID",
+                    "preset": true
+                },
+                {
+                    "name": "CF_PAGE_URL",
+                    "preset": true
+                },
+                {
+                    "name": "CF_API_KEY",
+                    "preset": true
+                },
+                {
+                    "name": "SPIGET_RESOURCES",
+                    "preset": true,
+                    "label": "Spiget Resource ID"
                 },
                 {
                     "label": "MOTD",

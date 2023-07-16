@@ -3,7 +3,6 @@
     "Icon_Path": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos",
     "Server_Icon": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png",
 
-    "Motd": "ChickenIQ's Server",
     "Username": "ChickenIQ",
     "Whitelist": "ChickenIQ",
     "Operators": "ChickenIQ",

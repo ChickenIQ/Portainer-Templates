@@ -4,7 +4,7 @@
         "title": "PaperMC",
         "description": "PaperMC Minecraft Server",
         "categories": ["Minecraft"],
-        "logo": "REPLW_ICON_PATH/paper.png",
+        "logo": "$ICON_PATH/paper.png",
         "env": [
             {
                 "name": "SERVER_TYPE",
@@ -15,7 +15,11 @@
                 "label": "Version",
                 "name": "VERSION",
                 "preset": false,
-                "default": "REPLW_LATEST_VERSION"
+                "default": "$LATEST_VERSION"
+            },
+            {
+                "label": "Spiget Resource ID",
+                "name": "SPIGET_RESOURCES"
             }
         ]
     }

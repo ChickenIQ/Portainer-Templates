@@ -2,7 +2,7 @@
     "type": 2,
     "platform": "linux",
     "repository": {
-        "url": "REPLW_TEMPLATES_REPO",
+        "url": "$TEMPLATES_REPO",
         "stackfile": "stacks/games/minecraft.yml"
     },
     "network": "mc",
@@ -10,7 +10,7 @@
         {
             "label": "Node Hostname",
             "name": "NODE_HOSTNAME",
-            "default": "REPLW_NODE_HOSTNAME"
+            "default": "$NODE_HOSTNAME"
         },
         {
             "label": "Java Version",
@@ -21,31 +21,55 @@
             ]
         },
         {
-            "name": "VERSION",
-            "preset": true
-        },
-        {
             "label": "Server Address",
             "name": "HOST"
         },
         {
-            "label": "Spiget Resource ID",
-            "name": "SPIGET_RESOURCES"
+            "name": "VERSION",
+            "preset": true
+        },
+        {
+            "name": "MODRINTH_PROJECT",
+            "preset": true
+        },
+        {
+            "name": "MODRINTH_VERSION",
+            "preset": true
+        },
+        {
+            "name": "FTB_MODPACK_ID",
+            "preset": true
+        },
+        {
+            "name": "FTB_MODPACK_VERSION_ID",
+            "preset": true
+        },
+        {
+            "name": "CF_PAGE_URL",
+            "preset": true
+        },
+        {
+            "name": "CF_API_KEY",
+            "preset": true
+        },
+        {
+            "name": "SPIGET_RESOURCES",
+            "preset": true
         },
         {
             "label": "MOTD",
             "name": "MOTD",
-            "default": "REPLW_USERNAME's Server"
+            "default": "$USERNAME's Server"
         },
         {
             "label": "Operators",
             "name": "OPS",
-            "default": "REPLW_OPERATORS"
+            "default": "$OPERATORS"
         },
         {
             "label": "Whitelist",
             "name": "WHITELIST",
-            "default": "REPLW_WHITELIST"
+            "default": "$WHITELIST"
         },
         {
             "label": "Max Players",
@@ -269,7 +293,7 @@
         {
             "label": "Server Icon",
             "name": "ICON",
-            "default": "REPLW_SERVER_ICON"
+            "default": "$SERVER_ICON"
         }
     ]
 }

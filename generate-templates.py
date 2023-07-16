@@ -35,7 +35,7 @@ for root, dirs, files in os.walk("templates"):
 # Replace variables in templates
 template = json.dumps(base, indent=4)
 for setting in config:
-    template = template.replace(f"REPLW_{setting.upper()}", config[setting])
+    template = template.replace(f"${setting.upper()}", config[setting])
 
 # Write templates to templates.json
 with open("templates.json", "w") as file:
