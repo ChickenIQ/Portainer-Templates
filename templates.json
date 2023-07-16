@@ -72,11 +72,6 @@
                     ]
                 },
                 {
-                    "label": "Version",
-                    "name": "VERSION",
-                    "default": "1.20.1"
-                },
-                {
                     "label": "Server Address",
                     "name": "HOST"
                 },
@@ -495,6 +490,17 @@
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
+                },
+                {
+                    "label": "Node Hostname",
+                    "name": "SERVER_TYPE",
+                    "default": "PAPER",
+                    "preset": true
+                },
+                {
+                    "label": "Version",
+                    "name": "VERSION",
+                    "default": "1.20.1"
                 }
             ]
         },

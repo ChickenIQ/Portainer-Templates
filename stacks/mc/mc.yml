@@ -27,6 +27,15 @@ services:
                     - node.Hostname == ${NODE_HOSTNAME}
 
         environment:
+            # Server Type Configuration
+            TYPE: '${SERVER_TYPE}'
+            MODRINTH_PROJECT: '${MODRINTH_PROJECT}'
+            MODRINTH_VERSION: '${MODRINTH_VERSION}'
+            FTB_MODPACK_ID: '${FTB_MODPACK_ID}'
+            FTB_MODPACK_VERSION_ID: '${FTB_MODPACK_VERSION_ID}'
+            CF_PAGE_URL: '${CF_PAGE_URL}'
+            CF_API_KEY: '${CF_API_KEY}'
+
             # General Configuration
             EULA: 'true'
             EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
@@ -64,12 +73,12 @@ services:
             SEED: '${SEED}'
             WORLD: '${WORLD}'
 
-            # Resource Configuration
+            # Resources
             RESOURCE_PACK: '${RESOURCE_PACK}'
             RESOURCE_PACK_ENFORCE: '${RESOURCE_PACK_ENFORCE}'
             SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
 
-            # Override Configuration
+            # Overrides
             OVERRIDE_ICON: '${OVERRIDE_ICON}'
             OVERRIDE_SERVER_PROPERTIES: '${OVERRIDE_SERVER_PROPERTIES}'
             OVERRIDE_WHITELIST: '${OVERRIDE_WHITELIST}'
@@ -81,4 +90,3 @@ services:
             # Additional Settings
             ENFORCE_SECURE_PROFILE: 'false'
             SNOOPER_ENABLED: 'false'
-            TYPE: PAPER

@@ -1,13 +1,13 @@
 {
     "type": 2,
-    "title": "PaperMC",
-    "description": "PaperMC Minecraft Server",
+    "title": "Minecraft",
+    "description": "Minecraft Server",
     "categories": ["Minecraft"],
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png",
+    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/minecraft.png",
     "repository": {
         "url": "https://github.com/ChickenIQ/portainer-templates",
-        "stackfile": "stacks/mc/paper.yml"
+        "stackfile": "stacks/mc/mc.yml"
     },
     "env": [
         {
@@ -22,11 +22,6 @@
                 { "text": "Java 17", "value": "java17", "default": "true" },
                 { "text": "Java 8", "value": "java8-multiarch" }
             ]
-        },
-        {
-            "label": "Version",
-            "name": "VERSION",
-            "default": "1.20.1"
         },
         {
             "label": "Server Address",
