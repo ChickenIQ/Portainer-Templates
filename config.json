@@ -3,9 +3,10 @@
     "Icon_Path": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos",
     "Server_Icon": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png",
 
-    "Username": "ChickenIQ",
-    "Whitelist": "ChickenIQ",
-    "Operators": "ChickenIQ",
+    "Username": "User",
+    "Whitelist": "User",
+    "Operators": "User",
     "Node_Hostname": "Main",
+    "Server_Adress": "mc.example.com",
     "Latest_Version": "1.20.1"
 }

@@ -22,7 +22,8 @@
         },
         {
             "label": "Server Address",
-            "name": "HOST"
+            "name": "HOST",
+            "default": "$SERVER_ADRESS"
         },
         {
             "name": "VERSION",
