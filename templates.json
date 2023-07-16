@@ -72,6 +72,12 @@
                     ]
                 },
                 {
+                    "name": "VERSION",
+                    "preset": false,
+                    "label": "Version",
+                    "default": "1.20.1"
+                },
+                {
                     "label": "Server Address",
                     "name": "HOST"
                 },
@@ -496,11 +502,6 @@
                     "name": "SERVER_TYPE",
                     "default": "PAPER",
                     "preset": true
-                },
-                {
-                    "label": "Version",
-                    "name": "VERSION",
-                    "default": "1.20.1"
                 }
             ]
         },

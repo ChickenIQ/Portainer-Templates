@@ -24,6 +24,10 @@
             ]
         },
         {
+            "name": "VERSION",
+            "preset": true
+        },
+        {
             "label": "Server Address",
             "name": "HOST"
         },
