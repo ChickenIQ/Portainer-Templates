@@ -26,7 +26,7 @@ for root, dirs, files in os.walk("templates"):
         else:
             template = json.load(open(os.path.join(root, file), "r"))
             print("Merging template: " + file.replace(".merge", "") +
-                  " with " + template["merge"])
+                  " with base file: " + template["merge"])
 
             base["templates"].append(merger.merge(json.load(
                 open(os.path.join("base", template["merge"]), "r")), template["data"]))
