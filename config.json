@@ -2,7 +2,6 @@
     "Templates_Repo": "https://github.com/ChickenIQ/portainer-templates",
     "Icon_Path": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos",
     "Server_Icon": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png",
-
     "Username": "User",
     "Whitelist": "User",
     "Operators": "User",

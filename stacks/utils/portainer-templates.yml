@@ -5,7 +5,7 @@ networks:
         external: true
 
 services:
-    miniserve:
+    portainer-templates:
         image: ghcr.io/chickeniq/portainer-templates-server
         ports:
             - 80

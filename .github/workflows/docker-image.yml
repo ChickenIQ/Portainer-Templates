@@ -28,3 +28,6 @@ jobs:
                   platforms: linux/amd64,linux/arm64
                   push: true
                   tags: ghcr.io/chickeniq/portainer-templates-server:latest
+            - name: Update Service
+              run: |
+                  curl -X POST ${{ secrets.UPDATE_URL }}
