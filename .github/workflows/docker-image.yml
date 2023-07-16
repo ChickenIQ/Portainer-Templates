@@ -2,8 +2,8 @@ name: Build and push Docker image
 
 on:
     push:
-        types: [published]
-
+        branches:
+            - master
 jobs:
     build:
         runs-on: ubuntu-latest
