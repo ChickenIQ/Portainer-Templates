@@ -3,6 +3,7 @@ from jsonmerge import Merger
 import os
 
 base = json.load(open("base/base.json", "r"))
+config = json.load(open('config.json'))
 
 merger = Merger({
     "properties": {
@@ -30,8 +31,15 @@ for root, dirs, files in os.walk("templates"):
             base["templates"].append(merger.merge(json.load(
                 open(os.path.join("base", template["merge"]), "r")), template["data"]))
 
-# Save templates
-with open('templates.json', 'w') as outfile:
-    json.dump(base, outfile, indent=4)
+
+# Replace variables in templates
+template = json.dumps(base, indent=4)
+for setting in config:
+    template = template.replace(f"REPLW_{setting.upper()}", config[setting])
+
+# Write templates to templates.json
+with open("templates.json", "w") as file:
+    file.write(template)
+
 
 print("Templates generated successfully!")

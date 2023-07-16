@@ -39,16 +39,10 @@
         },
         {
             "type": 2,
-            "title": "PaperMC",
-            "description": "PaperMC Minecraft Server",
-            "categories": [
-                "Minecraft"
-            ],
             "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png",
             "repository": {
                 "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/mc/minecraft.yml"
+                "stackfile": "stacks/games/minecraft.yml"
             },
             "env": [
                 {
@@ -495,15 +489,20 @@
                 {
                     "label": "Server Icon",
                     "name": "ICON",
-                    "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
+                    "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
                 },
                 {
-                    "label": "Node Hostname",
                     "name": "SERVER_TYPE",
                     "default": "PAPER",
                     "preset": true
                 }
-            ]
+            ],
+            "title": "PaperMC",
+            "description": "PaperMC Minecraft Server",
+            "categories": [
+                "Minecraft"
+            ],
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png"
         },
         {
             "type": 2,

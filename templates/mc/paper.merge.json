@@ -1,12 +1,12 @@
 {
-    "merge": "mc.json",
+    "merge": "minecraft.json",
     "data": {
         "title": "PaperMC",
         "description": "PaperMC Minecraft Server",
-        "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png",
+        "categories": ["Minecraft"],
+        "logo": "REPLW_ICON_PATH/paper.png",
         "env": [
             {
-                "label": "Node Hostname",
                 "name": "SERVER_TYPE",
                 "default": "PAPER",
                 "preset": true
@@ -15,7 +15,7 @@
                 "label": "Version",
                 "name": "VERSION",
                 "preset": false,
-                "default": "1.20.1"
+                "default": "REPLW_LATEST_VERSION"
             }
         ]
     }

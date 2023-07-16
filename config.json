@@ -1,0 +1,12 @@
+{
+    "Templates_Repo": "https://github.com/ChickenIQ/portainer-templates",
+    "Icon_Path": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos",
+    "Server_Icon": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png",
+
+    "Motd": "ChickenIQ's Server",
+    "Username": "ChickenIQ",
+    "Whitelist": "ChickenIQ",
+    "Operators": "ChickenIQ",
+    "Node_Hostname": "Main",
+    "Latest_Version": "1.20.1"
+}

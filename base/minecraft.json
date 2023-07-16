@@ -1,19 +1,15 @@
 {
     "type": 2,
-    "title": "Minecraft",
-    "description": "Minecraft Server",
-    "categories": ["Minecraft"],
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/minecraft.png",
     "repository": {
-        "url": "https://github.com/ChickenIQ/portainer-templates",
-        "stackfile": "stacks/mc/minecraft.yml"
+        "url": "REPLW_TEMPLATES_REPO",
+        "stackfile": "stacks/games/minecraft.yml"
     },
     "env": [
         {
             "label": "Node Hostname",
             "name": "NODE_HOSTNAME",
-            "default": "Main"
+            "default": "REPLW_NODE_HOSTNAME"
         },
         {
             "label": "Java Version",
@@ -38,17 +34,17 @@
         {
             "label": "MOTD",
             "name": "MOTD",
-            "default": "ChickenIQ's Server"
+            "default": "REPLW_USERNAME's Server"
         },
         {
             "label": "Operators",
             "name": "OPS",
-            "default": "ChickenIQ"
+            "default": "REPLW_OPERATORS"
         },
         {
             "label": "Whitelist",
             "name": "WHITELIST",
-            "default": "ChickenIQ"
+            "default": "REPLW_WHITELIST"
         },
         {
             "label": "Max Players",
@@ -272,7 +268,7 @@
         {
             "label": "Server Icon",
             "name": "ICON",
-            "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/chickeniq.png"
+            "default": "REPLW_SERVER_ICON"
         }
     ]
 }
