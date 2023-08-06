@@ -3,7 +3,7 @@
     "data": {
         "title": "PaperMC",
         "description": "PaperMC Minecraft Server",
-        "categories": ["Minecraft"],
+        "categories": ["Games", "Minecraft"],
         "logo": "$ICON_PATH/paper.png",
         "env": [
             {

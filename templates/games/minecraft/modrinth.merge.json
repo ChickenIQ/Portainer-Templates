@@ -3,7 +3,7 @@
     "data": {
         "title": "Modrinth",
         "description": "Modrinth Minecraft Server",
-        "categories": ["Minecraft", "Modded"],
+        "categories": ["Games", "Minecraft", "Modded"],
         "logo": "$ICON_PATH/modrinth.png",
         "env": [
             {

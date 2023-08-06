@@ -3,7 +3,7 @@
     "data": {
         "title": "CurseForge",
         "description": "CurseForge Minecraft Server",
-        "categories": ["Minecraft", "Modded"],
+        "categories": ["Games", "Minecraft", "Modded"],
         "logo": "$ICON_PATH/curse.png",
         "env": [
             {

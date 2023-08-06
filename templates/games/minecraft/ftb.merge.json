@@ -3,7 +3,7 @@
     "data": {
         "title": "FTB",
         "description": "FTB Minecraft Server",
-        "categories": ["Minecraft", "Modded"],
+        "categories": ["Games", "Minecraft", "Modded"],
         "logo": "$ICON_PATH/ftb.png",
         "env": [
             {

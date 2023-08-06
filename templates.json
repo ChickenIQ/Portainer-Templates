@@ -3,88 +3,6 @@
     "templates": [
         {
             "type": 2,
-            "title": "Miniserve",
-            "description": "File Server",
-            "categories": [
-                "Utils"
-            ],
-            "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
-            "repository": {
-                "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/utils/miniserve.yml"
-            },
-            "env": [
-                {
-                    "label": "Node Hostname",
-                    "name": "NODE_HOSTNAME",
-                    "default": "Main"
-                }
-            ]
-        },
-        {
-            "type": 2,
-            "title": "MC-Router",
-            "description": "Automatically route Minecraft Servers to their specific domain name.",
-            "categories": [
-                "Utils",
-                "Minecraft"
-            ],
-            "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mc-router.png",
-            "repository": {
-                "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/utils/mc-router.yml"
-            }
-        },
-        {
-            "type": 2,
-            "title": "Portainer Templates",
-            "description": "Self Hosted Portainer Templates Server",
-            "categories": [
-                "Utils"
-            ],
-            "platform": "linux",
-            "repository": {
-                "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/utils/portainer-templates.yml"
-            },
-            "env": [
-                {
-                    "label": "Node Hostname",
-                    "name": "NODE_HOSTNAME",
-                    "default": "Main"
-                }
-            ]
-        },
-        {
-            "type": 2,
-            "title": "Mumble",
-            "description": "Mumble Server",
-            "categories": [
-                "Voice"
-            ],
-            "platform": "linux",
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
-            "repository": {
-                "url": "https://github.com/ChickenIQ/portainer-templates",
-                "stackfile": "stacks/utils/mumble.yml"
-            },
-            "env": [
-                {
-                    "label": "Node Hostname",
-                    "name": "NODE_HOSTNAME",
-                    "default": "Main"
-                },
-                {
-                    "label": "Welcome Text",
-                    "name": "WELCOME_TEXT",
-                    "default": "Joined ChickenIQ's Mumble Server."
-                }
-            ]
-        },
-        {
-            "type": 2,
             "platform": "linux",
             "repository": {
                 "url": "https://github.com/ChickenIQ/portainer-templates",
@@ -119,9 +37,7 @@
                 },
                 {
                     "name": "VERSION",
-                    "preset": false,
-                    "label": "Version",
-                    "default": "1.20.1"
+                    "preset": true
                 },
                 {
                     "name": "MODRINTH_PROJECT",
@@ -141,16 +57,17 @@
                 },
                 {
                     "name": "CF_PAGE_URL",
-                    "preset": true
+                    "preset": false,
+                    "label": "Modpack URL"
                 },
                 {
                     "name": "CF_API_KEY",
-                    "preset": true
+                    "preset": false,
+                    "label": "CurseForge API Key"
                 },
                 {
                     "name": "SPIGET_RESOURCES",
-                    "preset": true,
-                    "label": "Spiget Resource ID"
+                    "preset": true
                 },
                 {
                     "label": "MOTD",
@@ -571,16 +488,18 @@
                 },
                 {
                     "name": "SERVER_TYPE",
-                    "default": "PAPER",
+                    "default": "AUTO_CURSEFORGE",
                     "preset": true
                 }
             ],
-            "title": "PaperMC",
-            "description": "PaperMC Minecraft Server",
+            "title": "CurseForge",
+            "description": "CurseForge Minecraft Server",
             "categories": [
-                "Minecraft"
+                "Games",
+                "Minecraft",
+                "Modded"
             ],
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png"
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png"
         },
         {
             "type": 2,
@@ -1076,6 +995,7 @@
             "title": "FTB",
             "description": "FTB Minecraft Server",
             "categories": [
+                "Games",
                 "Minecraft",
                 "Modded"
             ],
@@ -1575,6 +1495,7 @@
             "title": "Modrinth",
             "description": "Modrinth Minecraft Server",
             "categories": [
+                "Games",
                 "Minecraft",
                 "Modded"
             ],
@@ -1616,7 +1537,9 @@
                 },
                 {
                     "name": "VERSION",
-                    "preset": true
+                    "preset": false,
+                    "label": "Version",
+                    "default": "1.20.1"
                 },
                 {
                     "name": "MODRINTH_PROJECT",
@@ -1636,17 +1559,16 @@
                 },
                 {
                     "name": "CF_PAGE_URL",
-                    "preset": false,
-                    "label": "Modpack URL"
+                    "preset": true
                 },
                 {
                     "name": "CF_API_KEY",
-                    "preset": false,
-                    "label": "CurseForge API Key"
+                    "preset": true
                 },
                 {
                     "name": "SPIGET_RESOURCES",
-                    "preset": true
+                    "preset": true,
+                    "label": "Spiget Resource ID"
                 },
                 {
                     "label": "MOTD",
@@ -2067,17 +1989,200 @@
                 },
                 {
                     "name": "SERVER_TYPE",
-                    "default": "AUTO_CURSEFORGE",
+                    "default": "PAPER",
                     "preset": true
                 }
             ],
-            "title": "CurseForge",
-            "description": "CurseForge Minecraft Server",
+            "title": "PaperMC",
+            "description": "PaperMC Minecraft Server",
             "categories": [
-                "Minecraft",
-                "Modded"
+                "Games",
+                "Minecraft"
             ],
-            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png"
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png"
+        },
+        {
+            "type": 2,
+            "title": "Terraria",
+            "description": "Terraria server (x86 only)",
+            "categories": [
+                "Games"
+            ],
+            "platform": "linux",
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/terraria.png",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/games/terraria.yml"
+            },
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                },
+                {
+                    "label": "World Name",
+                    "name": "WORLD_NAME",
+                    "default": "World"
+                },
+                {
+                    "label": "Server Password",
+                    "name": "PASSWORD"
+                },
+                {
+                    "label": "MOTD",
+                    "name": "MOTD",
+                    "default": "Welcome to User's Terraria server!"
+                },
+                {
+                    "label": "Seed",
+                    "name": "SEED"
+                },
+                {
+                    "label": "Max Players",
+                    "name": "MAX_PLAYERS",
+                    "default": "16"
+                },
+                {
+                    "label": "World Size",
+                    "name": "AUTOCREATE",
+                    "select": [
+                        {
+                            "text": "Small",
+                            "value": "1"
+                        },
+                        {
+                            "text": "Medium",
+                            "value": "2"
+                        },
+                        {
+                            "text": "Large",
+                            "value": "3",
+                            "default": "true"
+                        }
+                    ]
+                },
+                {
+                    "label": "Difficulty",
+                    "name": "DIFFICULTY",
+                    "select": [
+                        {
+                            "text": "Normal",
+                            "value": "0",
+                            "default": "true"
+                        },
+                        {
+                            "text": "Expert",
+                            "value": "1"
+                        },
+                        {
+                            "text": "Master",
+                            "value": "2"
+                        },
+                        {
+                            "text": "Journey",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "label": "Prevent Cheats",
+                    "name": "SECURE",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "1",
+                            "default": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "title": "MC-Router",
+            "description": "Automatically route Minecraft Servers to their specific domain name.",
+            "categories": [
+                "Utils",
+                "Minecraft"
+            ],
+            "platform": "linux",
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mc-router.png",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/utils/mc-router.yml"
+            }
+        },
+        {
+            "type": 2,
+            "title": "Miniserve",
+            "description": "File Server",
+            "categories": [
+                "Utils"
+            ],
+            "platform": "linux",
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/utils/miniserve.yml"
+            },
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "title": "Portainer Templates",
+            "description": "Self Hosted Portainer Templates Server",
+            "categories": [
+                "Utils"
+            ],
+            "platform": "linux",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/utils/portainer-templates.yml"
+            },
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "title": "Mumble",
+            "description": "Mumble Server",
+            "categories": [
+                "Voice"
+            ],
+            "platform": "linux",
+            "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
+            "repository": {
+                "url": "https://github.com/ChickenIQ/portainer-templates",
+                "stackfile": "stacks/utils/mumble.yml"
+            },
+            "env": [
+                {
+                    "label": "Node Hostname",
+                    "name": "NODE_HOSTNAME",
+                    "default": "Main"
+                },
+                {
+                    "label": "Welcome Text",
+                    "name": "WELCOME_TEXT",
+                    "default": "Joined ChickenIQ's Mumble Server."
+                }
+            ]
         }
     ]
 }

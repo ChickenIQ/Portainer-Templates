@@ -1,0 +1,99 @@
+{
+    "type": 2,
+    "title": "Terraria",
+    "description": "Terraria server (x86 only)",
+    "categories": ["Games"],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/terraria.png",
+    "repository": {
+        "url": "https://github.com/ChickenIQ/portainer-templates",
+        "stackfile": "stacks/games/terraria.yml"
+    },
+    "env": [
+        {
+            "label": "Node Hostname",
+            "name": "NODE_HOSTNAME",
+            "default": "$NODE_HOSTNAME"
+        },
+        {
+            "label": "World Name",
+            "name": "WORLD_NAME",
+            "default": "World"
+        },
+        {
+            "label": "Server Password",
+            "name": "PASSWORD"
+        },
+        {
+            "label": "MOTD",
+            "name": "MOTD",
+            "default": "Welcome to $USERNAME's Terraria server!"
+        },
+        {
+            "label": "Seed",
+            "name": "SEED"
+        },
+        {
+            "label": "Max Players",
+            "name": "MAX_PLAYERS",
+            "default": "16"
+        },
+        {
+            "label": "World Size",
+            "name": "AUTOCREATE",
+            "select": [
+                {
+                    "text": "Small",
+                    "value": "1"
+                },
+                {
+                    "text": "Medium",
+                    "value": "2"
+                },
+                {
+                    "text": "Large",
+                    "value": "3",
+                    "default": "true"
+                }
+            ]
+        },
+        {
+            "label": "Difficulty",
+            "name": "DIFFICULTY",
+            "select": [
+                {
+                    "text": "Normal",
+                    "value": "0",
+                    "default": "true"
+                },
+                {
+                    "text": "Expert",
+                    "value": "1"
+                },
+                {
+                    "text": "Master",
+                    "value": "2"
+                },
+                {
+                    "text": "Journey",
+                    "value": "3"
+                }
+            ]
+        },
+        {
+            "label": "Prevent Cheats",
+            "name": "SECURE",
+            "select": [
+                {
+                    "text": "True",
+                    "value": "1",
+                    "default": "true"
+                },
+                {
+                    "text": "False",
+                    "value": "0"
+                }
+            ]
+        }
+    ]
+}
