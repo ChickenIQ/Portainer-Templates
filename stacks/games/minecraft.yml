@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 volumes:
     data:
@@ -20,7 +20,7 @@ services:
         deploy:
             resources:
                 limits:
-                    cpus: '${CPU_LIMIT}'
+                    cpus: "${CPU_LIMIT}"
             mode: replicated
             replicas: 1
             labels:
@@ -32,65 +32,66 @@ services:
 
         environment:
             # Server Type Configuration
-            TYPE: '${SERVER_TYPE}'
-            MODRINTH_PROJECT: '${MODRINTH_PROJECT}'
-            MODRINTH_VERSION: '${MODRINTH_VERSION}'
-            FTB_MODPACK_ID: '${FTB_MODPACK_ID}'
-            FTB_MODPACK_VERSION_ID: '${FTB_MODPACK_VERSION_ID}'
-            CF_PAGE_URL: '${CF_PAGE_URL}'
-            CF_API_KEY: '${CF_API_KEY}'
+            TYPE: "${SERVER_TYPE}"
+            MODRINTH_PROJECT: "${MODRINTH_PROJECT}"
+            MODRINTH_VERSION: "${MODRINTH_VERSION}"
+            FTB_MODPACK_ID: "${FTB_MODPACK_ID}"
+            FTB_MODPACK_VERSION_ID: "${FTB_MODPACK_VERSION_ID}"
+            CF_PAGE_URL: "${CF_PAGE_URL}"
+            CF_API_KEY: "${CF_API_KEY}"
 
             # General Configuration
-            EULA: 'true'
-            EXEC_DIRECTLY: '${EXEC_DIRECTLY}'
-            ICON: '${ICON}'
-            MOTD: '${MOTD}'
-            OPS: '${OPS}'
-            WHITELIST: '${WHITELIST}'
-            VERSION: '${VERSION}'
+            EULA: "true"
+            EXEC_DIRECTLY: "${EXEC_DIRECTLY}"
+            ICON: "${ICON}"
+            MOTD: "${MOTD}"
+            OPS: "${OPS}"
+            WHITELIST: "${WHITELIST}"
+            VERSION: "${VERSION}"
 
             # Server Configuration
-            ALLOW_FLIGHT: '${ALLOW_FLIGHT}'
-            ALLOW_NETHER: '${ALLOW_NETHER}'
-            DIFFICULTY: '${DIFFICULTY}'
-            ENABLE_COMMAND_BLOCK: '${ENABLE_COMMAND_BLOCK}'
-            ENABLE_WHITELIST: '${ENABLE_WHITELIST}'
-            FORCE_GAMEMODE: '${FORCE_GAMEMODE}'
-            GENERATE_STRUCTURES: '${GENERATE_STRUCTURES}'
-            HARDCORE: '${HARDCORE}'
-            MAX_BUILD_HEIGHT: '${MAX_BUILD_HEIGHT}'
-            MAX_PLAYERS: '${MAX_PLAYERS}'
-            MODE: '${MODE}'
-            ONLINE_MODE: '${ONLINE_MODE}'
-            PLAYER_IDLE_TIMEOUT: '${PLAYER_IDLE_TIMEOUT}'
-            PVP: '${PVP}'
-            SIMULATION_DISTANCE: '${SIMULATION_DISTANCE}'
-            SPAWN_ANIMALS: '${SPAWN_ANIMALS}'
-            SPAWN_MONSTERS: '${SPAWN_MONSTERS}'
-            SPAWN_NPCS: '${SPAWN_NPCS}'
-            SPAWN_PROTECTION: '${SPAWN_PROTECTION}'
-            VIEW_DISTANCE: '${VIEW_DISTANCE}'
+            ALLOW_FLIGHT: "${ALLOW_FLIGHT}"
+            ALLOW_NETHER: "${ALLOW_NETHER}"
+            DIFFICULTY: "${DIFFICULTY}"
+            ENABLE_COMMAND_BLOCK: "${ENABLE_COMMAND_BLOCK}"
+            ENABLE_WHITELIST: "${ENABLE_WHITELIST}"
+            FORCE_GAMEMODE: "${FORCE_GAMEMODE}"
+            GENERATE_STRUCTURES: "${GENERATE_STRUCTURES}"
+            HARDCORE: "${HARDCORE}"
+            MAX_BUILD_HEIGHT: "${MAX_BUILD_HEIGHT}"
+            MAX_PLAYERS: "${MAX_PLAYERS}"
+            MODE: "${MODE}"
+            ONLINE_MODE: "${ONLINE_MODE}"
+            PLAYER_IDLE_TIMEOUT: "${PLAYER_IDLE_TIMEOUT}"
+            PVP: "${PVP}"
+            SIMULATION_DISTANCE: "${SIMULATION_DISTANCE}"
+            SPAWN_ANIMALS: "${SPAWN_ANIMALS}"
+            SPAWN_MONSTERS: "${SPAWN_MONSTERS}"
+            SPAWN_NPCS: "${SPAWN_NPCS}"
+            SPAWN_PROTECTION: "${SPAWN_PROTECTION}"
+            VIEW_DISTANCE: "${VIEW_DISTANCE}"
 
             # World Configuration
-            GENERATOR_SETTINGS: '${GENERATOR_SETTINGS}'
-            LEVEL_TYPE: '${LEVEL_TYPE}'
-            SEED: '${SEED}'
-            WORLD: '${WORLD}'
+            GENERATOR_SETTINGS: "${GENERATOR_SETTINGS}"
+            LEVEL_TYPE: "${LEVEL_TYPE}"
+            SEED: "${SEED}"
+            WORLD: "${WORLD}"
 
             # Resources
-            RESOURCE_PACK: '${RESOURCE_PACK}'
-            RESOURCE_PACK_ENFORCE: '${RESOURCE_PACK_ENFORCE}'
-            SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
+            RESOURCE_PACK: "${RESOURCE_PACK}"
+            RESOURCE_PACK_ENFORCE: "${RESOURCE_PACK_ENFORCE}"
+            SPIGET_RESOURCES: "${SPIGET_RESOURCES}"
 
             # Overrides
-            OVERRIDE_ICON: '${OVERRIDE_ICON}'
-            OVERRIDE_SERVER_PROPERTIES: '${OVERRIDE_SERVER_PROPERTIES}'
-            OVERRIDE_WHITELIST: '${OVERRIDE_WHITELIST}'
+            OVERRIDE_ICON: "${OVERRIDE_ICON}"
+            OVERRIDE_SERVER_PROPERTIES: "${OVERRIDE_SERVER_PROPERTIES}"
+            OVERRIDE_WHITELIST: "${OVERRIDE_WHITELIST}"
+            OVERRIDE_OPS: "${OVERRIDE_OPS}"
 
             # Memory Configuration
-            INIT_MEMORY: '${INIT_MEMORY}'
-            MAX_MEMORY: '${MAX_MEMORY}'
+            INIT_MEMORY: "${INIT_MEMORY}"
+            MAX_MEMORY: "${MAX_MEMORY}"
 
             # Additional Settings
-            ENFORCE_SECURE_PROFILE: 'false'
-            SNOOPER_ENABLED: 'false'
+            ENFORCE_SECURE_PROFILE: "false"
+            SNOOPER_ENABLED: "false"

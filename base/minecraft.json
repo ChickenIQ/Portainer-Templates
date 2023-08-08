@@ -447,6 +447,21 @@
             ]
         },
         {
+            "label": "Override OPS",
+            "name": "OVERRIDE_OVERRIDE_OPS",
+            "select": [
+                {
+                    "text": "True",
+                    "value": "true"
+                },
+                {
+                    "text": "False",
+                    "value": "false",
+                    "default": "true"
+                }
+            ]
+        },
+        {
             "label": "Override Whitelist",
             "name": "OVERRIDE_WHITELIST",
             "select": [
