@@ -457,12 +457,12 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": "true"
+                            "value": "true"
                         },
                         {
                             "text": "False",
-                            "value": "false"
+                            "value": "false",
+                            "default": "true"
                         }
                     ]
                 },
@@ -959,12 +959,12 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": "true"
+                            "value": "true"
                         },
                         {
                             "text": "False",
-                            "value": "false"
+                            "value": "false",
+                            "default": "true"
                         }
                     ]
                 },
@@ -1461,12 +1461,12 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": "true"
+                            "value": "true"
                         },
                         {
                             "text": "False",
-                            "value": "false"
+                            "value": "false",
+                            "default": "true"
                         }
                     ]
                 },
@@ -1964,12 +1964,12 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": "true"
+                            "value": "true"
                         },
                         {
                             "text": "False",
-                            "value": "false"
+                            "value": "false",
+                            "default": "true"
                         }
                     ]
                 },
