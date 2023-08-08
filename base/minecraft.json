@@ -234,7 +234,7 @@
         {
             "label": "Spawn Protection",
             "name": "SPAWN_PROTECTION",
-            "default": "16"
+            "default": "0"
         },
         {
             "label": "Simulation Distance",
