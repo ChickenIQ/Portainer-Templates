@@ -3,7 +3,7 @@
     "data": {
         "title": "PaperMC",
         "description": "PaperMC Minecraft Server",
-        "categories": ["Games", "Minecraft"],
+        "categories": ["Games", "Minecraft", "amd64", "arm64"],
         "logo": "$ICON_PATH/paper.png",
         "env": [
             {
@@ -19,7 +19,8 @@
             },
             {
                 "label": "Spiget Resource ID",
-                "name": "SPIGET_RESOURCES"
+                "name": "SPIGET_RESOURCES",
+                "preset": false
             }
         ]
     }

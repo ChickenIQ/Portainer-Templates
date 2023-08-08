@@ -2,7 +2,7 @@
     "type": 2,
     "title": "MC-Router",
     "description": "Automatically route Minecraft Servers to their specific domain name.",
-    "categories": ["Utils", "Minecraft"],
+    "categories": ["Utils", "Minecraft", "amd64", "arm64"],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mc-router.png",
     "repository": {

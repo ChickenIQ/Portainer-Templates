@@ -2,7 +2,7 @@
     "type": 2,
     "title": "Miniserve",
     "description": "File Server",
-    "categories": ["Utils"],
+    "categories": ["Utils", "amd64", "arm64"],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
     "repository": {

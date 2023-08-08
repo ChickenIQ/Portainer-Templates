@@ -1,17 +1,17 @@
-version: '3.8'
+version: "3.8"
 
 services:
     router:
         image: itzg/mc-router:latest
         command: --in-docker-swarm
         ports:
-            - '25565:25565'
+            - "25565:25565"
         networks:
             - mc
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
         environment:
-            CONNECTION_RATE_LIMIT: '5'
+            CONNECTION_RATE_LIMIT: "5"
         deploy:
             labels:
                 - mc-router.network=mc

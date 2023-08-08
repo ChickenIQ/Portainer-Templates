@@ -1,8 +1,8 @@
 {
     "type": 2,
     "title": "Terraria",
-    "description": "Terraria server (x86 only)",
-    "categories": ["Games"],
+    "description": "Terraria server (amd64 only)",
+    "categories": ["Games", "amd64"],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/terraria.png",
     "repository": {
@@ -21,13 +21,18 @@
             "default": "World"
         },
         {
-            "label": "Server Password",
-            "name": "PASSWORD"
-        },
-        {
             "label": "MOTD",
             "name": "MOTD",
             "default": "Welcome to $USERNAME's Terraria server!"
+        },
+        {
+            "label": "Port",
+            "name": "PORT",
+            "default": "7777"
+        },
+        {
+            "label": "Server Password",
+            "name": "PASSWORD"
         },
         {
             "label": "Seed",
@@ -40,7 +45,7 @@
         },
         {
             "label": "World Size",
-            "name": "AUTOCREATE",
+            "name": "WORLD_SIZE",
             "select": [
                 {
                     "text": "Small",
@@ -81,16 +86,16 @@
             ]
         },
         {
-            "label": "Prevent Cheats",
-            "name": "SECURE",
+            "label": "Allow Cheats",
+            "name": "ALLOW_CHEATS",
             "select": [
                 {
-                    "text": "True",
+                    "text": "False",
                     "value": "1",
                     "default": "true"
                 },
                 {
-                    "text": "False",
+                    "text": "True",
                     "value": "0"
                 }
             ]

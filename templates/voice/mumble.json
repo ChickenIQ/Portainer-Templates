@@ -2,7 +2,7 @@
     "type": 2,
     "title": "Mumble",
     "description": "Mumble Server",
-    "categories": ["Voice"],
+    "categories": ["Voice", "amd64", "arm64"],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
     "repository": {

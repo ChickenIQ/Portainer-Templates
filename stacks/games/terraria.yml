@@ -7,7 +7,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - 7777:7777
+      - ${PORT}:7777
     volumes:
       - data:/worlds
     environment:
@@ -16,9 +16,9 @@ services:
       - motd=${MOTD}
       - seed=${SEED}
       - maxplayers=${MAX_PLAYERS}
-      - autocreate=${AUTOCREATE}
+      - autocreate=${WORLD_SIZE}
       - difficulty=${DIFFICULTY}
-      - secure=${SECURE}
+      - secure=${ALLOW_CHEATS}
       - world=/worlds/${WORLD_NAME}.wld
       - port=7777
     deploy:

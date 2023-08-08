@@ -2,7 +2,7 @@
     "type": 2,
     "title": "Portainer Templates",
     "description": "Self Hosted Portainer Templates Server",
-    "categories": ["Utils"],
+    "categories": ["Utils", "amd64", "arm64"],
     "platform": "linux",
     "repository": {
         "url": "https://github.com/ChickenIQ/portainer-templates",
