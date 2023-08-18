@@ -1,6 +1,6 @@
+import os
 import json
 from jsonmerge import Merger
-import os
 
 
 def generate_templates(config):
@@ -18,24 +18,14 @@ def generate_templates(config):
     )
 
     print("Generating templates...\n")
-
     # Load and merge templates
-    for root, dirs, files in os.walk("templates"):
+    for root, files in os.walk("templates"):
         for file in files:
             if file.endswith(".json") and ".merge" not in file:
-                # print("Adding template: " + file)
-
                 with open(os.path.join(root, file), "r") as template:
                     base["templates"].append(json.load(template))
             else:
                 template = json.load(open(os.path.join(root, file), "r"))
-                # print(
-                #     "Merging template: "
-                #     + file.replace(".merge", "")
-                #     + " with base file: "
-                #     + template["merge"]
-                # )
-
                 base["templates"].append(
                     merger.merge(
                         json.load(open(os.path.join("base", template["merge"]), "r")),
@@ -46,7 +36,6 @@ def generate_templates(config):
     # Replace variables in templates
     template = json.dumps(base, indent=4)
     for setting in config:
-        # print("Replacing variable: " + setting)
         template = template.replace(f"${setting.upper()}", config[setting])
 
     return template
