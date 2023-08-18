@@ -23,18 +23,18 @@ def generate_templates(config):
     for root, dirs, files in os.walk("templates"):
         for file in files:
             if file.endswith(".json") and ".merge" not in file:
-                print("Adding template: " + file)
+                # print("Adding template: " + file)
 
                 with open(os.path.join(root, file), "r") as template:
                     base["templates"].append(json.load(template))
             else:
                 template = json.load(open(os.path.join(root, file), "r"))
-                print(
-                    "Merging template: "
-                    + file.replace(".merge", "")
-                    + " with base file: "
-                    + template["merge"]
-                )
+                # print(
+                #     "Merging template: "
+                #     + file.replace(".merge", "")
+                #     + " with base file: "
+                #     + template["merge"]
+                # )
 
                 base["templates"].append(
                     merger.merge(
@@ -46,7 +46,7 @@ def generate_templates(config):
     # Replace variables in templates
     template = json.dumps(base, indent=4)
     for setting in config:
-        print("Replacing variable: " + setting)
+        # print("Replacing variable: " + setting)
         template = template.replace(f"${setting.upper()}", config[setting])
 
     return template

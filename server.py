@@ -1,14 +1,21 @@
 import fastapi
 import uvicorn
 import json
+from os import environ
+from fastapi_cache import FastAPICache
+from fastapi_cache.backends.inmemory import InMemoryBackend
+from fastapi_cache.decorator import cache
 from templates import generate_templates
+
 
 config = json.load(open("config.json"))
 templates = json.load(open("templates.json"))
 app = fastapi.FastAPI()
+FastAPICache.init(InMemoryBackend())
 
 
 @app.get("/")
+@cache(expire=1800)
 def custom(
     templates_repo: str = config["Templates_Repo"],
     icon_path: str = config["Icon_Path"],
@@ -41,4 +48,6 @@ def custom(
 
 
 if __name__ == "__main__":
-    uvicorn.run("server:app", host="0.0.0.0", port=8080, reload=True)
+    uvicorn.run(
+        "server:app", host="0.0.0.0", port=8080, reload=environ.get("DEV", False)
+    )

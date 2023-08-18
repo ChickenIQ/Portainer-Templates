@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app	
 
-RUN pip install fastapi uvicorn jsonmerge
+RUN pip install fastapi fastapi-cache2 uvicorn jsonmerge 
 
 EXPOSE 80
 
