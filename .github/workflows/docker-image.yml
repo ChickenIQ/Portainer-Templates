@@ -6,6 +6,12 @@ on:
             - main
         paths-ignore:
             - '**/README.md'
+            - '**/LICENSE'
+            - '**/.gitignore'
+            - '**/update.sh'
+            - '**/update.bat'
+            - '**/templates.json'
+
 jobs:
     build:
         runs-on: ubuntu-latest
