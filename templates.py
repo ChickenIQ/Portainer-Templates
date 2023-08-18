@@ -19,7 +19,7 @@ def generate_templates(config):
 
     print("Generating templates...\n")
     # Load and merge templates
-    for root, files in os.walk("templates"):
+    for root, dirs, files in os.walk("templates"):
         for file in files:
             if file.endswith(".json") and ".merge" not in file:
                 with open(os.path.join(root, file), "r") as template:
