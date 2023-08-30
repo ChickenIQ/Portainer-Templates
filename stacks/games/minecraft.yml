@@ -85,8 +85,6 @@ services:
             # Overrides
             OVERRIDE_ICON: "${OVERRIDE_ICON}"
             OVERRIDE_SERVER_PROPERTIES: "${OVERRIDE_SERVER_PROPERTIES}"
-            OVERRIDE_WHITELIST: "${OVERRIDE_WHITELIST}"
-            OVERRIDE_OPS: "${OVERRIDE_OPS}"
 
             # Memory Configuration
             INIT_MEMORY: "${INIT_MEMORY}"
