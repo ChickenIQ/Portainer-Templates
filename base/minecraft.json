@@ -187,9 +187,12 @@
             "name": "LEVEL_TYPE",
             "select": [
                 {
-                    "text": "Normal",
-                    "value": "minecraft:normal",
+                    "text": "None",
                     "default": "true"
+                },
+                {
+                    "text": "Normal",
+                    "value": "minecraft:normal"
                 },
                 {
                     "text": "Flat",
@@ -452,12 +455,12 @@
             "select": [
                 {
                     "text": "True",
-                    "value": "true"
+                    "value": "true",
+                    "default": "true"
                 },
                 {
                     "text": "False",
-                    "value": "false",
-                    "default": "true"
+                    "value": "false"
                 }
             ]
         },
