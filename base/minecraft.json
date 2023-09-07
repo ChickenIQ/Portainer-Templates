@@ -217,6 +217,10 @@
                 {
                     "text": "Customized",
                     "value": "minecraft:customized"
+                },
+                {
+                    "text": "SkyBlockBuilder (Modded)",
+                    "value": "skyblockbuilder:skyblock"
                 }
             ]
         },
