@@ -465,6 +465,21 @@
             ]
         },
         {
+            "label": "Debug",
+            "name": "DEBUG",
+            "select": [
+                {
+                    "text": "True",
+                    "value": "true"
+                },
+                {
+                    "text": "False",
+                    "value": "false",
+                    "default": "true"
+                }
+            ]
+        },
+        {
             "label": "Server Icon",
             "name": "ICON",
             "default": "$SERVER_ICON"

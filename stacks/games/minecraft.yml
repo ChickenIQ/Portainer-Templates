@@ -48,6 +48,7 @@ services:
             OPS: '${OPS}'
             WHITELIST: '${WHITELIST}'
             VERSION: '${VERSION}'
+            DEBUG: '${DEBUG}'
 
             # Server Configuration
             ALLOW_FLIGHT: '${ALLOW_FLIGHT}'
