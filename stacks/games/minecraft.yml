@@ -17,6 +17,8 @@ services:
             - data:/data
         networks:
             - mc
+        labels:
+            - 'hidden=true'
         deploy:
             resources:
                 limits:

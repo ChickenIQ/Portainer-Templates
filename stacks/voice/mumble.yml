@@ -13,7 +13,8 @@ services:
             - data:/data
         environment:
             MUMBLE_CONFIG_welcome_text: ${WELCOME_TEXT}
-
+        labels:
+            - 'hidden=true'
         deploy:
             mode: replicated
             replicas: 1

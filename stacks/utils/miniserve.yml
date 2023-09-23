@@ -19,6 +19,8 @@ services:
         tty: true
         networks:
             - main
+        labels:
+            - 'hidden=true'
         deploy:
             mode: replicated
             replicas: 1

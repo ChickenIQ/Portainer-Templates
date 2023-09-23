@@ -21,6 +21,8 @@ services:
       - secure=${ALLOW_CHEATS}
       - world=/worlds/${WORLD_NAME}.wld
       - port=7777
+    labels:
+      - 'hidden=true'
     deploy:
       mode: replicated
       replicas: 1
