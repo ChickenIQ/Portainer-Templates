@@ -5,11 +5,7 @@
             "type": 2,
             "title": "Miniserve",
             "description": "File Server",
-            "categories": [
-                "Utils",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Utils", "amd64", "arm64"],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
             "repository": {
@@ -28,12 +24,7 @@
             "type": 2,
             "title": "MC-Router",
             "description": "Automatically route Minecraft Servers to their specific domain name.",
-            "categories": [
-                "Utils",
-                "Minecraft",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Utils", "Minecraft", "amd64", "arm64"],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mc-router.png",
             "repository": {
@@ -45,11 +36,7 @@
             "type": 2,
             "title": "Portainer Templates",
             "description": "Self Hosted Portainer Templates Server",
-            "categories": [
-                "Utils",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Utils", "amd64", "arm64"],
             "platform": "linux",
             "repository": {
                 "url": "https://github.com/ChickenIQ/portainer-templates",
@@ -67,11 +54,7 @@
             "type": 2,
             "title": "Mumble",
             "description": "Mumble Server",
-            "categories": [
-                "Voice",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Voice", "amd64", "arm64"],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
             "repository": {
@@ -95,10 +78,7 @@
             "type": 2,
             "title": "Terraria",
             "description": "Terraria server (amd64 only)",
-            "categories": [
-                "Games",
-                "amd64"
-            ],
+            "categories": ["Games", "amd64"],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/terraria.png",
             "repository": {
@@ -154,7 +134,7 @@
                         {
                             "text": "Large",
                             "value": "3",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -165,7 +145,7 @@
                         {
                             "text": "Normal",
                             "value": "0",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Expert",
@@ -188,7 +168,7 @@
                         {
                             "text": "False",
                             "value": "1",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "True",
@@ -219,7 +199,7 @@
                         {
                             "text": "Java 17",
                             "value": "java17",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Java 8",
@@ -308,7 +288,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -323,7 +303,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -338,7 +318,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -353,7 +333,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -368,7 +348,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -391,7 +371,7 @@
                         {
                             "text": "Normal",
                             "value": "minecraft:normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Flat",
@@ -455,7 +435,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -470,7 +450,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -485,7 +465,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -500,7 +480,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -515,7 +495,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -538,7 +518,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -553,7 +533,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -568,7 +548,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -579,7 +559,7 @@
                         {
                             "text": "Survival",
                             "value": "survival",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Creative",
@@ -610,7 +590,7 @@
                         {
                             "text": "Normal",
                             "value": "normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Hard",
@@ -625,7 +605,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -640,7 +620,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -659,7 +639,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -674,7 +654,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -685,7 +665,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -706,13 +686,7 @@
             ],
             "title": "Modrinth",
             "description": "Modrinth Minecraft Server",
-            "categories": [
-                "Games",
-                "Minecraft",
-                "Modded",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Games", "Minecraft", "Modded", "amd64", "arm64"],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/modrinth.png"
         },
         {
@@ -736,7 +710,7 @@
                         {
                             "text": "Java 17",
                             "value": "java17",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Java 8",
@@ -825,7 +799,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -840,7 +814,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -855,7 +829,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -870,7 +844,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -885,7 +859,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -908,7 +882,7 @@
                         {
                             "text": "Normal",
                             "value": "minecraft:normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Flat",
@@ -972,7 +946,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -987,7 +961,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1002,7 +976,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1017,7 +991,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1032,7 +1006,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1055,7 +1029,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1070,7 +1044,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1085,7 +1059,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1096,7 +1070,7 @@
                         {
                             "text": "Survival",
                             "value": "survival",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Creative",
@@ -1127,7 +1101,7 @@
                         {
                             "text": "Normal",
                             "value": "normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Hard",
@@ -1142,7 +1116,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1157,7 +1131,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1176,7 +1150,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1191,7 +1165,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1202,7 +1176,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1223,13 +1197,7 @@
             ],
             "title": "FTB",
             "description": "FTB Minecraft Server",
-            "categories": [
-                "Games",
-                "Minecraft",
-                "Modded",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Games", "Minecraft", "Modded", "amd64", "arm64"],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/ftb.png"
         },
         {
@@ -1253,7 +1221,7 @@
                         {
                             "text": "Java 17",
                             "value": "java17",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Java 8",
@@ -1343,7 +1311,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1358,7 +1326,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1373,7 +1341,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1388,7 +1356,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1403,7 +1371,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1426,7 +1394,7 @@
                         {
                             "text": "Normal",
                             "value": "minecraft:normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Flat",
@@ -1490,7 +1458,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1505,7 +1473,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1520,7 +1488,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1535,7 +1503,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1550,7 +1518,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1573,7 +1541,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1588,7 +1556,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1603,7 +1571,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1614,7 +1582,7 @@
                         {
                             "text": "Survival",
                             "value": "survival",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Creative",
@@ -1645,7 +1613,7 @@
                         {
                             "text": "Normal",
                             "value": "normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Hard",
@@ -1660,7 +1628,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1675,7 +1643,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1694,7 +1662,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1709,7 +1677,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -1720,7 +1688,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1741,12 +1709,7 @@
             ],
             "title": "PaperMC",
             "description": "PaperMC Minecraft Server",
-            "categories": [
-                "Games",
-                "Minecraft",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Games", "Minecraft", "amd64", "arm64"],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png"
         },
         {
@@ -1770,7 +1733,7 @@
                         {
                             "text": "Java 17",
                             "value": "java17",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Java 8",
@@ -1859,7 +1822,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1874,7 +1837,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1889,7 +1852,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1904,7 +1867,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1919,7 +1882,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -1942,7 +1905,7 @@
                         {
                             "text": "Normal",
                             "value": "minecraft:normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Flat",
@@ -2006,7 +1969,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2021,7 +1984,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2036,7 +1999,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2051,7 +2014,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2066,7 +2029,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2089,7 +2052,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -2104,7 +2067,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -2119,7 +2082,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -2130,7 +2093,7 @@
                         {
                             "text": "Survival",
                             "value": "survival",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Creative",
@@ -2161,7 +2124,7 @@
                         {
                             "text": "Normal",
                             "value": "normal",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "Hard",
@@ -2176,7 +2139,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2191,7 +2154,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2210,7 +2173,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -2225,7 +2188,7 @@
                         {
                             "text": "False",
                             "value": "false",
-                            "default": "true"
+                            "default": true
                         }
                     ]
                 },
@@ -2236,7 +2199,7 @@
                         {
                             "text": "True",
                             "value": "true",
-                            "default": "true"
+                            "default": true
                         },
                         {
                             "text": "False",
@@ -2257,13 +2220,7 @@
             ],
             "title": "CurseForge",
             "description": "CurseForge Minecraft Server",
-            "categories": [
-                "Games",
-                "Minecraft",
-                "Modded",
-                "amd64",
-                "arm64"
-            ],
+            "categories": ["Games", "Minecraft", "Modded", "amd64", "arm64"],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png"
         }
     ]

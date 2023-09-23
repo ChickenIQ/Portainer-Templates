@@ -58,7 +58,7 @@
                 {
                     "text": "Large",
                     "value": "3",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
@@ -69,7 +69,7 @@
                 {
                     "text": "Normal",
                     "value": "0",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "Expert",
@@ -92,7 +92,7 @@
                 {
                     "text": "False",
                     "value": "1",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "True",

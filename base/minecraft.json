@@ -19,7 +19,7 @@
                 {
                     "text": "Java 17",
                     "value": "java17",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "Java 8",
@@ -106,7 +106,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -121,7 +121,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -136,7 +136,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -151,7 +151,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -166,7 +166,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -188,7 +188,7 @@
             "select": [
                 {
                     "text": "Default",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "Normal",
@@ -260,7 +260,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -275,7 +275,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -290,7 +290,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -305,7 +305,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -320,7 +320,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -343,7 +343,7 @@
                 {
                     "text": "False",
                     "value": "false",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
@@ -358,7 +358,7 @@
                 {
                     "text": "False",
                     "value": "false",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
@@ -373,7 +373,7 @@
                 {
                     "text": "False",
                     "value": "false",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
@@ -384,7 +384,7 @@
                 {
                     "text": "Survival",
                     "value": "survival",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "Creative",
@@ -415,7 +415,7 @@
                 {
                     "text": "Normal",
                     "value": "normal",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "Hard",
@@ -434,7 +434,7 @@
                 {
                     "text": "False",
                     "value": "false",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
@@ -449,7 +449,7 @@
                 {
                     "text": "False",
                     "value": "false",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
@@ -460,7 +460,7 @@
                 {
                     "text": "True",
                     "value": "true",
-                    "default": "true"
+                    "default": true
                 },
                 {
                     "text": "False",
@@ -479,7 +479,7 @@
                 {
                     "text": "False",
                     "value": "false",
-                    "default": "true"
+                    "default": true
                 }
             ]
         },
