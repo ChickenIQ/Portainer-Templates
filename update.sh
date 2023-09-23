@@ -3,7 +3,7 @@
 read -p "Commit message: " message
 message=${message:-Update}
 
-python3 update.py
+python3 templates.py
 git add .
 git commit -m "$message"
 git push
