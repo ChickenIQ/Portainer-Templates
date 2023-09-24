@@ -5,7 +5,11 @@
             "type": 2,
             "title": "Miniserve",
             "description": "File Server",
-            "categories": ["Utils", "amd64", "arm64"],
+            "categories": [
+                "Utils",
+                "amd64",
+                "arm64"
+            ],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/miniserve.png",
             "repository": {
@@ -24,7 +28,12 @@
             "type": 2,
             "title": "MC-Router",
             "description": "Automatically route Minecraft Servers to their specific domain name.",
-            "categories": ["Utils", "Minecraft", "amd64", "arm64"],
+            "categories": [
+                "Utils",
+                "Minecraft",
+                "amd64",
+                "arm64"
+            ],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mc-router.png",
             "repository": {
@@ -36,7 +45,11 @@
             "type": 2,
             "title": "Portainer Templates",
             "description": "Self Hosted Portainer Templates Server",
-            "categories": ["Utils", "amd64", "arm64"],
+            "categories": [
+                "Utils",
+                "amd64",
+                "arm64"
+            ],
             "platform": "linux",
             "repository": {
                 "url": "https://github.com/ChickenIQ/portainer-templates",
@@ -54,7 +67,11 @@
             "type": 2,
             "title": "Mumble",
             "description": "Mumble Server",
-            "categories": ["Voice", "amd64", "arm64"],
+            "categories": [
+                "Voice",
+                "amd64",
+                "arm64"
+            ],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/mumble.png",
             "repository": {
@@ -78,7 +95,10 @@
             "type": 2,
             "title": "Terraria",
             "description": "Terraria server (amd64 only)",
-            "categories": ["Games", "amd64"],
+            "categories": [
+                "Games",
+                "amd64"
+            ],
             "platform": "linux",
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/terraria.png",
             "repository": {
@@ -369,9 +389,12 @@
                     "name": "LEVEL_TYPE",
                     "select": [
                         {
-                            "text": "Normal",
-                            "value": "minecraft:normal",
+                            "text": "Default",
                             "default": true
+                        },
+                        {
+                            "text": "Normal",
+                            "value": "minecraft:normal"
                         },
                         {
                             "text": "Flat",
@@ -396,6 +419,10 @@
                         {
                             "text": "Customized",
                             "value": "minecraft:customized"
+                        },
+                        {
+                            "text": "SkyBlockBuilder (Modded)",
+                            "value": "skyblockbuilder:skyblock"
                         }
                     ]
                 },
@@ -604,36 +631,6 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override Server Properties",
-                    "name": "OVERRIDE_SERVER_PROPERTIES",
-                    "select": [
-                        {
-                            "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override OPS",
-                    "name": "OVERRIDE_OVERRIDE_OPS",
-                    "select": [
-                        {
-                            "text": "True",
                             "value": "true"
                         },
                         {
@@ -644,8 +641,8 @@
                     ]
                 },
                 {
-                    "label": "Override Whitelist",
-                    "name": "OVERRIDE_WHITELIST",
+                    "label": "Override Server Properties",
+                    "name": "OVERRIDE_SERVER_PROPERTIES",
                     "select": [
                         {
                             "text": "True",
@@ -674,6 +671,21 @@
                     ]
                 },
                 {
+                    "label": "Debug",
+                    "name": "DEBUG",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
@@ -686,7 +698,13 @@
             ],
             "title": "Modrinth",
             "description": "Modrinth Minecraft Server",
-            "categories": ["Games", "Minecraft", "Modded", "amd64", "arm64"],
+            "categories": [
+                "Games",
+                "Minecraft",
+                "Modded",
+                "amd64",
+                "arm64"
+            ],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/modrinth.png"
         },
         {
@@ -880,9 +898,12 @@
                     "name": "LEVEL_TYPE",
                     "select": [
                         {
-                            "text": "Normal",
-                            "value": "minecraft:normal",
+                            "text": "Default",
                             "default": true
+                        },
+                        {
+                            "text": "Normal",
+                            "value": "minecraft:normal"
                         },
                         {
                             "text": "Flat",
@@ -907,6 +928,10 @@
                         {
                             "text": "Customized",
                             "value": "minecraft:customized"
+                        },
+                        {
+                            "text": "SkyBlockBuilder (Modded)",
+                            "value": "skyblockbuilder:skyblock"
                         }
                     ]
                 },
@@ -1115,36 +1140,6 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override Server Properties",
-                    "name": "OVERRIDE_SERVER_PROPERTIES",
-                    "select": [
-                        {
-                            "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override OPS",
-                    "name": "OVERRIDE_OVERRIDE_OPS",
-                    "select": [
-                        {
-                            "text": "True",
                             "value": "true"
                         },
                         {
@@ -1155,8 +1150,8 @@
                     ]
                 },
                 {
-                    "label": "Override Whitelist",
-                    "name": "OVERRIDE_WHITELIST",
+                    "label": "Override Server Properties",
+                    "name": "OVERRIDE_SERVER_PROPERTIES",
                     "select": [
                         {
                             "text": "True",
@@ -1185,6 +1180,21 @@
                     ]
                 },
                 {
+                    "label": "Debug",
+                    "name": "DEBUG",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
@@ -1197,7 +1207,13 @@
             ],
             "title": "FTB",
             "description": "FTB Minecraft Server",
-            "categories": ["Games", "Minecraft", "Modded", "amd64", "arm64"],
+            "categories": [
+                "Games",
+                "Minecraft",
+                "Modded",
+                "amd64",
+                "arm64"
+            ],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/ftb.png"
         },
         {
@@ -1392,9 +1408,12 @@
                     "name": "LEVEL_TYPE",
                     "select": [
                         {
-                            "text": "Normal",
-                            "value": "minecraft:normal",
+                            "text": "Default",
                             "default": true
+                        },
+                        {
+                            "text": "Normal",
+                            "value": "minecraft:normal"
                         },
                         {
                             "text": "Flat",
@@ -1419,6 +1438,10 @@
                         {
                             "text": "Customized",
                             "value": "minecraft:customized"
+                        },
+                        {
+                            "text": "SkyBlockBuilder (Modded)",
+                            "value": "skyblockbuilder:skyblock"
                         }
                     ]
                 },
@@ -1627,36 +1650,6 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override Server Properties",
-                    "name": "OVERRIDE_SERVER_PROPERTIES",
-                    "select": [
-                        {
-                            "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override OPS",
-                    "name": "OVERRIDE_OVERRIDE_OPS",
-                    "select": [
-                        {
-                            "text": "True",
                             "value": "true"
                         },
                         {
@@ -1667,8 +1660,8 @@
                     ]
                 },
                 {
-                    "label": "Override Whitelist",
-                    "name": "OVERRIDE_WHITELIST",
+                    "label": "Override Server Properties",
+                    "name": "OVERRIDE_SERVER_PROPERTIES",
                     "select": [
                         {
                             "text": "True",
@@ -1697,6 +1690,21 @@
                     ]
                 },
                 {
+                    "label": "Debug",
+                    "name": "DEBUG",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
@@ -1709,7 +1717,12 @@
             ],
             "title": "PaperMC",
             "description": "PaperMC Minecraft Server",
-            "categories": ["Games", "Minecraft", "amd64", "arm64"],
+            "categories": [
+                "Games",
+                "Minecraft",
+                "amd64",
+                "arm64"
+            ],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/paper.png"
         },
         {
@@ -1903,9 +1916,12 @@
                     "name": "LEVEL_TYPE",
                     "select": [
                         {
-                            "text": "Normal",
-                            "value": "minecraft:normal",
+                            "text": "Default",
                             "default": true
+                        },
+                        {
+                            "text": "Normal",
+                            "value": "minecraft:normal"
                         },
                         {
                             "text": "Flat",
@@ -1930,6 +1946,10 @@
                         {
                             "text": "Customized",
                             "value": "minecraft:customized"
+                        },
+                        {
+                            "text": "SkyBlockBuilder (Modded)",
+                            "value": "skyblockbuilder:skyblock"
                         }
                     ]
                 },
@@ -2138,36 +2158,6 @@
                     "select": [
                         {
                             "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override Server Properties",
-                    "name": "OVERRIDE_SERVER_PROPERTIES",
-                    "select": [
-                        {
-                            "text": "True",
-                            "value": "true",
-                            "default": true
-                        },
-                        {
-                            "text": "False",
-                            "value": "false"
-                        }
-                    ]
-                },
-                {
-                    "label": "Override OPS",
-                    "name": "OVERRIDE_OVERRIDE_OPS",
-                    "select": [
-                        {
-                            "text": "True",
                             "value": "true"
                         },
                         {
@@ -2178,8 +2168,8 @@
                     ]
                 },
                 {
-                    "label": "Override Whitelist",
-                    "name": "OVERRIDE_WHITELIST",
+                    "label": "Override Server Properties",
+                    "name": "OVERRIDE_SERVER_PROPERTIES",
                     "select": [
                         {
                             "text": "True",
@@ -2208,6 +2198,21 @@
                     ]
                 },
                 {
+                    "label": "Debug",
+                    "name": "DEBUG",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
@@ -2220,7 +2225,13 @@
             ],
             "title": "CurseForge",
             "description": "CurseForge Minecraft Server",
-            "categories": ["Games", "Minecraft", "Modded", "amd64", "arm64"],
+            "categories": [
+                "Games",
+                "Minecraft",
+                "Modded",
+                "amd64",
+                "arm64"
+            ],
             "logo": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/curse.png"
         }
     ]

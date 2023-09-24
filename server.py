@@ -5,11 +5,11 @@ from os import environ
 from fastapi_cache import FastAPICache
 from fastapi_cache.backends.inmemory import InMemoryBackend
 from fastapi_cache.decorator import cache
-from templates import generate_templates
+from templates import generate_templates, replace_vars
 
 
 config = json.load(open("config.json"))
-templates = json.load(open("templates.json"))
+templates_default = generate_templates()
 app = fastapi.FastAPI()
 FastAPICache.init(InMemoryBackend())
 
@@ -26,11 +26,13 @@ def custom(
     node_hostname: str = config["Node_Hostname"],
     latest_version: str = config["Latest_Version"],
     server_adress: str = config["Server_Adress"],
-    custom: str = False,
+    custom: bool = False,
 ):
     if custom:
+        print("Generating custom templates...\n")
         return json.loads(
-            generate_templates(
+            replace_vars(
+                templates_default,
                 {
                     "Templates_Repo": templates_repo,
                     "Icon_Path": icon_path,
@@ -41,10 +43,10 @@ def custom(
                     "Node_Hostname": node_hostname,
                     "Latest_Version": latest_version,
                     "Server_Adress": server_adress,
-                }
+                },
             )
         )
-    return templates
+    return templates_default
 
 
 if __name__ == "__main__":

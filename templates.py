@@ -3,7 +3,7 @@ import json
 from jsonmerge import Merger
 
 
-def generate_templates(config):
+def generate_templates():
     base = json.load(open("base/base.json", "r"))
 
     merger = Merger(
@@ -33,16 +33,17 @@ def generate_templates(config):
                     )
                 )
 
-    # Replace variables in templates
-    template = json.dumps(base, indent=4)
+    return json.dumps(base, indent=4)
+
+
+def replace_vars(template, config):
     for setting in config:
         template = template.replace(f"${setting.upper()}", config[setting])
-
     return template
 
 
 if __name__ == "__main__":
-    templates = generate_templates(json.load(open("config.json")))
+    templates = replace_vars(generate_templates(), json.load(open("config.json")))
     with open("templates.json", "w") as file:
         file.write(templates)
 
