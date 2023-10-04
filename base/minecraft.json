@@ -469,6 +469,21 @@
             ]
         },
         {
+            "label": "Use Aikar Flags",
+            "name": "USE_AIKAR_FLAGS",
+            "select": [
+                {
+                    "text": "True",
+                    "value": "true"
+                },
+                {
+                    "text": "False",
+                    "value": "false",
+                    "default": true
+                }
+            ]
+        },
+        {
             "label": "Debug",
             "name": "DEBUG",
             "select": [

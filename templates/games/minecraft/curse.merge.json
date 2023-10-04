@@ -20,6 +20,31 @@
                 "label": "CurseForge API Key",
                 "name": "CF_API_KEY",
                 "preset": false
+            },
+            {
+                "label": "Modrinth Mods",
+                "name": "MODRINTH_PROJECTS",
+                "preset": false
+            },
+            {
+                "label": "Mods",
+                "name": "MODS",
+                "preset": false
+            },
+            {
+                "label": "Select Level From",
+                "name": "CF_SET_LEVEL_FROM",
+                "select": [
+                    {
+                        "text": "World File",
+                        "value": "WORLD_FILE",
+                        "default": true
+                    },
+                    {
+                        "text": "Overrides",
+                        "value": "OVERRIDES"
+                    }
+                ]
             }
         ]
     }

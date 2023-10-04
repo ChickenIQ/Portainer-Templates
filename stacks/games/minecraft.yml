@@ -41,6 +41,7 @@ services:
             FTB_MODPACK_VERSION_ID: '${FTB_MODPACK_VERSION_ID}'
             CF_PAGE_URL: '${CF_PAGE_URL}'
             CF_API_KEY: '${CF_API_KEY}'
+            CF_SET_LEVEL_FROM: '${CF_SET_LEVEL_FROM}'
 
             # General Configuration
             EULA: 'true'
@@ -51,6 +52,7 @@ services:
             WHITELIST: '${WHITELIST}'
             VERSION: '${VERSION}'
             DEBUG: '${DEBUG}'
+            USE_AIKAR_FLAGS: '${USE_AIKAR_FLAGS}'
 
             # Server Configuration
             ALLOW_FLIGHT: '${ALLOW_FLIGHT}'
@@ -84,6 +86,10 @@ services:
             RESOURCE_PACK: '${RESOURCE_PACK}'
             RESOURCE_PACK_ENFORCE: '${RESOURCE_PACK_ENFORCE}'
             SPIGET_RESOURCES: '${SPIGET_RESOURCES}'
+            MODS: '${MODS}'
+            PLUGINS: '${PLUGINS}'
+            MODRINTH_PROJECTS: '${MODRINTH_PROJECTS}'
+            CURSEFORGE_FILES: '${CURSEFORGE_FILES}'
 
             # Overrides
             OVERRIDE_ICON: '${OVERRIDE_ICON}'
@@ -94,5 +100,7 @@ services:
             MAX_MEMORY: '${MAX_MEMORY}'
 
             # Additional Settings
+            EXISTING_WHITELIST_FILE: 'MERGE'
+            EXISTING_OPS_FILE: 'MERGE'
             ENFORCE_SECURE_PROFILE: 'false'
             SNOOPER_ENABLED: 'false'

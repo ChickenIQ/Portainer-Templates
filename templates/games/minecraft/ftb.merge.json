@@ -20,6 +20,16 @@
                 "label": "Modpack Version ID",
                 "name": "FTB_MODPACK_VERSION_ID",
                 "preset": false
+            },
+            {
+                "label": "Modrinth Mods",
+                "name": "MODRINTH_PROJECTS",
+                "preset": false
+            },
+            {
+                "label": "Mods",
+                "name": "MODS",
+                "preset": false
             }
         ]
     }

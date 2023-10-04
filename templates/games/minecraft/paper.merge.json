@@ -7,9 +7,27 @@
         "logo": "$ICON_PATH/paper.png",
         "env": [
             {
+                "label": "Server Type",
                 "name": "SERVER_TYPE",
-                "default": "PAPER",
-                "preset": true
+                "select": [
+                    {
+                        "text": "Paper",
+                        "value": "PAPER",
+                        "default": true
+                    },
+                    {
+                        "text": "Pufferfish",
+                        "value": "PUFFERFISH"
+                    },
+                    {
+                        "text": "Purpur",
+                        "value": "PURPUR"
+                    },
+                    {
+                        "text": "Folia",
+                        "value": "FOLIA"
+                    }
+                ]
             },
             {
                 "label": "Version",
@@ -20,6 +38,11 @@
             {
                 "label": "Spiget Resource ID",
                 "name": "SPIGET_RESOURCES",
+                "preset": false
+            },
+            {
+                "label": "Plugins",
+                "name": "Plugins",
                 "preset": false
             }
         ]
