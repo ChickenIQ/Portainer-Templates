@@ -9,6 +9,7 @@
             {
                 "label": "Server Type",
                 "name": "SERVER_TYPE",
+                "preset": false,
                 "select": [
                     {
                         "text": "Paper",
