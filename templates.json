@@ -671,6 +671,21 @@
                     ]
                 },
                 {
+                    "label": "Use Aikar Flags",
+                    "name": "USE_AIKAR_FLAGS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Debug",
                     "name": "DEBUG",
                     "select": [
@@ -694,6 +709,16 @@
                     "name": "SERVER_TYPE",
                     "default": "FTBA",
                     "preset": true
+                },
+                {
+                    "label": "Modrinth Mods",
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": false
+                },
+                {
+                    "label": "Mods",
+                    "name": "MODS",
+                    "preset": false
                 }
             ],
             "title": "Modrinth",
@@ -1180,6 +1205,21 @@
                     ]
                 },
                 {
+                    "label": "Use Aikar Flags",
+                    "name": "USE_AIKAR_FLAGS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Debug",
                     "name": "DEBUG",
                     "select": [
@@ -1203,6 +1243,16 @@
                     "name": "SERVER_TYPE",
                     "default": "FTBA",
                     "preset": true
+                },
+                {
+                    "label": "Modrinth Mods",
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": false
+                },
+                {
+                    "label": "Mods",
+                    "name": "MODS",
+                    "preset": false
                 }
             ],
             "title": "FTB",
@@ -1690,6 +1740,21 @@
                     ]
                 },
                 {
+                    "label": "Use Aikar Flags",
+                    "name": "USE_AIKAR_FLAGS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Debug",
                     "name": "DEBUG",
                     "select": [
@@ -1710,9 +1775,32 @@
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
                 },
                 {
+                    "label": "Server Type",
                     "name": "SERVER_TYPE",
-                    "default": "PAPER",
-                    "preset": true
+                    "select": [
+                        {
+                            "text": "Paper",
+                            "value": "PAPER",
+                            "default": true
+                        },
+                        {
+                            "text": "Pufferfish",
+                            "value": "PUFFERFISH"
+                        },
+                        {
+                            "text": "Purpur",
+                            "value": "PURPUR"
+                        },
+                        {
+                            "text": "Folia",
+                            "value": "FOLIA"
+                        }
+                    ]
+                },
+                {
+                    "label": "Plugins",
+                    "name": "Plugins",
+                    "preset": false
                 }
             ],
             "title": "PaperMC",
@@ -2198,6 +2286,21 @@
                     ]
                 },
                 {
+                    "label": "Use Aikar Flags",
+                    "name": "USE_AIKAR_FLAGS",
+                    "select": [
+                        {
+                            "text": "True",
+                            "value": "true"
+                        },
+                        {
+                            "text": "False",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
                     "label": "Debug",
                     "name": "DEBUG",
                     "select": [
@@ -2221,6 +2324,31 @@
                     "name": "SERVER_TYPE",
                     "default": "AUTO_CURSEFORGE",
                     "preset": true
+                },
+                {
+                    "label": "Modrinth Mods",
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": false
+                },
+                {
+                    "label": "Mods",
+                    "name": "MODS",
+                    "preset": false
+                },
+                {
+                    "label": "Select Level From",
+                    "name": "CF_SET_LEVEL_FROM",
+                    "select": [
+                        {
+                            "text": "World File",
+                            "value": "WORLD_FILE",
+                            "default": true
+                        },
+                        {
+                            "text": "Overrides",
+                            "value": "OVERRIDES"
+                        }
+                    ]
                 }
             ],
             "title": "CurseForge",
