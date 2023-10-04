@@ -1,10 +1,8 @@
-FROM python:slim
+FROM python:3.11-slim-bullseye
 
 WORKDIR /app
 
 COPY . /app	
-
-RUN apt update && apt install -y python3-distutils
 
 RUN pip install fastapi fastapi-cache2 uvicorn jsonmerge 
 
