@@ -1,5 +1,4 @@
-FROM python:3.12.0-slim-bookworm
-
+FROM python:3.12-slim-bullseye
 WORKDIR /app
 
 COPY . /app	

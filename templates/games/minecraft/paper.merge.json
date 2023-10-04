@@ -42,7 +42,7 @@
             },
             {
                 "label": "Plugins",
-                "name": "Plugins",
+                "name": "PLUGINS",
                 "preset": false
             }
         ]

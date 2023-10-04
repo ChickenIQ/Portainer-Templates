@@ -65,6 +65,22 @@
             "preset": true
         },
         {
+            "name": "CF_SET_LEVEL_FROM",
+            "preset": true
+        },
+        {
+            "name": "MODRINTH_PROJECTS",
+            "preset": true
+        },
+        {
+            "name": "MODS",
+            "preset": true
+        },
+        {
+            "name": "PLUGINS",
+            "preset": true
+        },
+        {
             "label": "MOTD",
             "name": "MOTD",
             "default": "$USERNAME's Server"

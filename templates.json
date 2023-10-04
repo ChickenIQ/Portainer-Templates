@@ -267,6 +267,24 @@
                     "preset": true
                 },
                 {
+                    "name": "CF_SET_LEVEL_FROM",
+                    "preset": true
+                },
+                {
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": false,
+                    "label": "Modrinth Mods"
+                },
+                {
+                    "name": "MODS",
+                    "preset": false,
+                    "label": "Mods"
+                },
+                {
+                    "name": "PLUGINS",
+                    "preset": true
+                },
+                {
                     "label": "MOTD",
                     "name": "MOTD",
                     "default": "User's Server"
@@ -709,16 +727,6 @@
                     "name": "SERVER_TYPE",
                     "default": "FTBA",
                     "preset": true
-                },
-                {
-                    "label": "Modrinth Mods",
-                    "name": "MODRINTH_PROJECTS",
-                    "preset": false
-                },
-                {
-                    "label": "Mods",
-                    "name": "MODS",
-                    "preset": false
                 }
             ],
             "title": "Modrinth",
@@ -801,6 +809,24 @@
                     "preset": true
                 },
                 {
+                    "name": "CF_SET_LEVEL_FROM",
+                    "preset": true
+                },
+                {
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": false,
+                    "label": "Modrinth Mods"
+                },
+                {
+                    "name": "MODS",
+                    "preset": false,
+                    "label": "Mods"
+                },
+                {
+                    "name": "PLUGINS",
+                    "preset": true
+                },
+                {
                     "label": "MOTD",
                     "name": "MOTD",
                     "default": "User's Server"
@@ -1243,16 +1269,6 @@
                     "name": "SERVER_TYPE",
                     "default": "FTBA",
                     "preset": true
-                },
-                {
-                    "label": "Modrinth Mods",
-                    "name": "MODRINTH_PROJECTS",
-                    "preset": false
-                },
-                {
-                    "label": "Mods",
-                    "name": "MODS",
-                    "preset": false
                 }
             ],
             "title": "FTB",
@@ -1334,6 +1350,23 @@
                     "name": "SPIGET_RESOURCES",
                     "preset": false,
                     "label": "Spiget Resource ID"
+                },
+                {
+                    "name": "CF_SET_LEVEL_FROM",
+                    "preset": true
+                },
+                {
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": true
+                },
+                {
+                    "name": "MODS",
+                    "preset": true
+                },
+                {
+                    "name": "PLUGINS",
+                    "preset": false,
+                    "label": "Plugins"
                 },
                 {
                     "label": "MOTD",
@@ -1796,11 +1829,6 @@
                             "value": "FOLIA"
                         }
                     ]
-                },
-                {
-                    "label": "Plugins",
-                    "name": "Plugins",
-                    "preset": false
                 }
             ],
             "title": "PaperMC",
@@ -1879,6 +1907,36 @@
                 },
                 {
                     "name": "SPIGET_RESOURCES",
+                    "preset": true
+                },
+                {
+                    "name": "CF_SET_LEVEL_FROM",
+                    "preset": true,
+                    "label": "Select Level From",
+                    "select": [
+                        {
+                            "text": "World File",
+                            "value": "WORLD_FILE",
+                            "default": true
+                        },
+                        {
+                            "text": "Overrides",
+                            "value": "OVERRIDES"
+                        }
+                    ]
+                },
+                {
+                    "name": "MODRINTH_PROJECTS",
+                    "preset": false,
+                    "label": "Modrinth Mods"
+                },
+                {
+                    "name": "MODS",
+                    "preset": false,
+                    "label": "Mods"
+                },
+                {
+                    "name": "PLUGINS",
                     "preset": true
                 },
                 {
@@ -2324,31 +2382,6 @@
                     "name": "SERVER_TYPE",
                     "default": "AUTO_CURSEFORGE",
                     "preset": true
-                },
-                {
-                    "label": "Modrinth Mods",
-                    "name": "MODRINTH_PROJECTS",
-                    "preset": false
-                },
-                {
-                    "label": "Mods",
-                    "name": "MODS",
-                    "preset": false
-                },
-                {
-                    "label": "Select Level From",
-                    "name": "CF_SET_LEVEL_FROM",
-                    "select": [
-                        {
-                            "text": "World File",
-                            "value": "WORLD_FILE",
-                            "default": true
-                        },
-                        {
-                            "text": "Overrides",
-                            "value": "OVERRIDES"
-                        }
-                    ]
                 }
             ],
             "title": "CurseForge",
