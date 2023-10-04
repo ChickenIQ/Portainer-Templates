@@ -46,7 +46,7 @@ def custom(
                 },
             )
         )
-    return templates_default
+    return json.loads(templates_default)
 
 
 if __name__ == "__main__":
