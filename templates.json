@@ -228,6 +228,11 @@
                     ]
                 },
                 {
+                    "name": "SERVER_TYPE",
+                    "preset": true,
+                    "default": "FTBA"
+                },
+                {
                     "label": "Server Address",
                     "name": "HOST",
                     "default": "mc.example.com"
@@ -722,11 +727,6 @@
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
-                },
-                {
-                    "name": "SERVER_TYPE",
-                    "default": "FTBA",
-                    "preset": true
                 }
             ],
             "title": "Modrinth",
@@ -768,6 +768,11 @@
                             "value": "java8-multiarch"
                         }
                     ]
+                },
+                {
+                    "name": "SERVER_TYPE",
+                    "preset": true,
+                    "default": "FTBA"
                 },
                 {
                     "label": "Server Address",
@@ -1264,11 +1269,6 @@
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
-                },
-                {
-                    "name": "SERVER_TYPE",
-                    "default": "FTBA",
-                    "preset": true
                 }
             ],
             "title": "FTB",
@@ -1308,6 +1308,30 @@
                         {
                             "text": "Java 8",
                             "value": "java8-multiarch"
+                        }
+                    ]
+                },
+                {
+                    "name": "SERVER_TYPE",
+                    "preset": true,
+                    "label": "Server Type",
+                    "select": [
+                        {
+                            "text": "Paper",
+                            "value": "PAPER",
+                            "default": true
+                        },
+                        {
+                            "text": "Pufferfish",
+                            "value": "PUFFERFISH"
+                        },
+                        {
+                            "text": "Purpur",
+                            "value": "PURPUR"
+                        },
+                        {
+                            "text": "Folia",
+                            "value": "FOLIA"
                         }
                     ]
                 },
@@ -1806,29 +1830,6 @@
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
-                },
-                {
-                    "label": "Server Type",
-                    "name": "SERVER_TYPE",
-                    "select": [
-                        {
-                            "text": "Paper",
-                            "value": "PAPER",
-                            "default": true
-                        },
-                        {
-                            "text": "Pufferfish",
-                            "value": "PUFFERFISH"
-                        },
-                        {
-                            "text": "Purpur",
-                            "value": "PURPUR"
-                        },
-                        {
-                            "text": "Folia",
-                            "value": "FOLIA"
-                        }
-                    ]
                 }
             ],
             "title": "PaperMC",
@@ -1869,6 +1870,11 @@
                             "value": "java8-multiarch"
                         }
                     ]
+                },
+                {
+                    "name": "SERVER_TYPE",
+                    "preset": true,
+                    "default": "AUTO_CURSEFORGE"
                 },
                 {
                     "label": "Server Address",
@@ -2377,11 +2383,6 @@
                     "label": "Server Icon",
                     "name": "ICON",
                     "default": "https://raw.githubusercontent.com/ChickenIQ/portainer-templates/main/logos/server.png"
-                },
-                {
-                    "name": "SERVER_TYPE",
-                    "default": "AUTO_CURSEFORGE",
-                    "preset": true
                 }
             ],
             "title": "CurseForge",

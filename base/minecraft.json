@@ -28,6 +28,10 @@
             ]
         },
         {
+            "name": "SERVER_TYPE",
+            "preset": true
+        },
+        {
             "label": "Server Address",
             "name": "HOST",
             "default": "$SERVER_ADRESS"
