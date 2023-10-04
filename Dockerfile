@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . /app	
 
+RUN apt install python3-distutils
+
 RUN pip install fastapi fastapi-cache2 uvicorn jsonmerge 
 
 EXPOSE 80
