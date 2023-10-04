@@ -494,12 +494,12 @@
             "select": [
                 {
                     "text": "True",
-                    "value": "true"
+                    "value": "true",
+                    "default": true
                 },
                 {
                     "text": "False",
-                    "value": "false",
-                    "default": true
+                    "value": "false"
                 }
             ]
         },
