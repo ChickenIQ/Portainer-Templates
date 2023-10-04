@@ -22,7 +22,7 @@ services:
         deploy:
             resources:
                 limits:
-                    cpus: '${CPU_LIMIT}'
+                    cpus: '${CPUS}'
             mode: replicated
             replicas: 1
             labels:
