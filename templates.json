@@ -1313,7 +1313,7 @@
                 },
                 {
                     "name": "SERVER_TYPE",
-                    "preset": true,
+                    "preset": false,
                     "label": "Server Type",
                     "select": [
                         {
