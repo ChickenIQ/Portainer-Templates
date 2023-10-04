@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app	
 
-RUN apt install python3-distutils
+RUN apt update && apt install -y python3-distutils
 
 RUN pip install fastapi fastapi-cache2 uvicorn jsonmerge 
 
