@@ -7,7 +7,6 @@ from fastapi_cache.backends.inmemory import InMemoryBackend
 from fastapi_cache.decorator import cache
 from templates import generate_templates, replace_vars
 
-
 config = json.load(open("config.json"))
 templates_default = generate_templates()
 app = fastapi.FastAPI()
@@ -16,7 +15,7 @@ FastAPICache.init(InMemoryBackend())
 
 @app.get("/")
 @cache(expire=1800)
-def custom(
+def main(
     templates_repo: str = config["Templates_Repo"],
     icon_path: str = config["Icon_Path"],
     server_icon: str = config["Server_Icon"],
@@ -29,7 +28,6 @@ def custom(
     custom: bool = False,
 ):
     if custom:
-        print("Generating custom templates...\n")
         return json.loads(
             replace_vars(
                 templates_default,
@@ -46,6 +44,7 @@ def custom(
                 },
             )
         )
+
     return json.loads(templates_default)
 
 

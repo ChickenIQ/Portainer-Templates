@@ -16,22 +16,19 @@ def generate_templates():
             },
         }
     )
-
-    print("Generating templates...\n")
     # Load and merge templates
     for root, dirs, files in os.walk("templates"):
         for file in files:
-            if file.endswith(".json") and ".merge" not in file:
-                with open(os.path.join(root, file), "r") as template:
-                    base["templates"].append(json.load(template))
-            else:
-                template = json.load(open(os.path.join(root, file), "r"))
+            template = json.load(open(os.path.join(root, file), "r"))
+            if file.endswith(".merge.json"):
                 base["templates"].append(
                     merger.merge(
                         json.load(open(os.path.join("base", template["merge"]), "r")),
                         template["data"],
                     )
                 )
+            else:
+                base["templates"].append(template)
 
     return json.dumps(base, indent=4)
 
